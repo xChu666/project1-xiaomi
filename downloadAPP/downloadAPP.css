@@ -1,0 +1,76 @@
+.main {
+	width: 100%;
+	height: 540px;
+	margin-bottom: 70px;
+	background: url(../img/saoma-img.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container {
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: flex;
+}
+
+.main .container .APPimg{
+	width: 455px;
+	height: 542px;
+	background: url(../img/sapma-img.png) no-repeat;
+	background-size: cover;
+	margin-top: 39px;
+	margin-left: 40px;
+}
+.main .container .APPinfo{
+	width: 520px;
+	height: 510px;
+	/* background: red; */
+	margin-top: 30px;
+	margin-left: 65px;
+}
+.main .container .APPinfo .down{
+	font-size: 40px;
+	color: #333;
+	text-align: center;
+	margin-top: 20px;
+}
+.main .container .APPinfo .down_price{
+	height: 82px;
+	width: 312px;
+	display: flex;
+	margin: 20px auto 0;
+}
+.main .container .APPinfo .down_price div{
+	height: 82px;
+	width: 108px;
+	margin: 0 24px;
+	text-align: center;
+	/* background-color: #0f0; */
+}
+.main .container .APPinfo .down_price div .p_pic{
+	font-size: 44px;
+	color: #fd862f;
+}
+.main .container .APPinfo .down_price div .p_inf{
+	font-size: 18px;
+	color: #666;
+}
+.main .container .APPinfo .down_ewm{
+	width: 152px;
+	height: 181px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 10px;
+	margin-top: 44px;
+}
+.main .container .APPinfo .down_ewm .ewm{
+	width: 152px;
+	height: 152px;
+	background: url(../img/down_ewm.png);
+}
+.main .container .APPinfo .down_ewm p{
+	font-size: 14px;
+	color: 333;
+	text-align: center;
+	margin-top: 10px;
+}

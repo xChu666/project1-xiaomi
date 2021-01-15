@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米帐号-注册</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="./reg.css"/>
+		<link rel="icon" type="image/x-icon" href="../img/xiaomi-favicon.ico">
+		<script src="../public-js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./reg.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="reg-box">
+			<div class="reg">
+				<!-- 切换 -->
+				<div class="icon"></div>
+				<p>注册小米帐号</p>
+				<div class="input" id="input">
+					<div class="area">
+						<p>国家/地区</p>
+						<div class="place"><span>中国</span>
+						<i><i class="fa fa-chevron-circle-down" aria-hidden="true" style="color: #CFCFCF;"></i></i>
+						</div>
+						<p style="color: #666;">成功注册帐号后，国家/地区将不能被修改</p>
+					</div>
+					<div class="phone">
+						<p>手机号码</p>
+						<div class="phone-num" id="phone-num">
+							<span>+86<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+						
+						<input type="text" name="" id="num-phone" placeholder="请输入手机号码" />
+						</div>
+						<p id="error"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span id="erroy-info">请输入手机号码</span></p>
+					</div>
+					<button type="button" id="btn">下一步</button>
+					<div class="approved" id="approved"><i class="fa fa-check" aria-hidden="true"></i>验证成功</div>
+				</div>
+				<p class="angry" id="angry">已阅读并同意：小米 <span>用户协议</span>和 <span>隐私政策</span></p>
+				<div class="receiveCode" id="receiveCode">
+					<div class="reg_title">
+						<div>我们已经发送一条验证短信至<span id="getPhone">+86 17686431861</span></div>
+						<p>请输入短信中的验证码</p>
+					</div>
+					<div class="reg_yzm" id="reg_yzm">
+						<input type="text" id="regYzm" placeholder="请输入验证码" />
+						<div>重新发送<span id="countDown">（120）</span></div>
+					</div>
+					<p id="error2"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span id="erroy2-info">验证码错误或过期</span></p>
+					<div class="no-ma">收不到验证码？</div>
+					<button type="button" id="nextStep">立即注册</button>
+					<button type="button" id="backtrack">返回</button>
+					<div class="approved" id="approved2"><i class="fa fa-check" aria-hidden="true"></i>验证成功</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="reg-botbox">
+			<p class="up">	
+			<span style="color: #333333;">简体</span>
+			<span>|</span>    
+			<span>繁体</span>
+			<span>|</span>
+			<span>English</span>
+			<span>|</span>
+			<span>常见问题</span>
+			</p>
+			<p class="dow">
+				<span>小米公司版权所有-京ICP备10046444-</span><i style="width: 20px;height: 20px;display: inline-block;background: url(../img/record-icon..png);"></i><span>京公网安备11010802020134号-京ICP证110507号</span>
+			</p>
+		</div>
+	</body>
+</html>

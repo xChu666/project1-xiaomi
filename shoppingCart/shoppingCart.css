@@ -1,0 +1,406 @@
+.main {
+	border-top: 1px solid #E7E7E7;
+	width: 100%;
+	padding-bottom: 100px;
+	margin: 0;
+	min-height: 452px;
+}
+
+.main .container {
+	width: 1080px;
+	min-height: 452px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.main .container .cartNav {
+	height: 77px;
+	width: 100%;
+	padding: 30px 0;
+	font-size: 13px;
+	box-sizing: border-box;
+}
+
+.main .container .cartNav .mycart {
+	color: #999;
+}
+
+.main .container .cartBox {
+	width: 100%;
+	min-height: 452px;
+	display: none;
+}
+
+.main .container .cartBox .cartTop {
+	width: 1080px;
+	height: 42px;
+	background: #FAFAFA;
+}
+
+.main .container .cartBox .cartTop span {
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	font-size: 14px;
+	display: inline-block;
+}
+.main .container .cartBox .cartTop .cart_chick{
+	width: 20px;
+	font-size: 18px;
+	color: #E0E0E0;
+}
+.fa-check-circle{
+	color: red;
+}
+.main .container .cartBox .cartShops{
+	padding-bottom: 100px;
+}
+.main .container .cartBox .cartShops .deleteShop {
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	display: none;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box{
+	width: 430px;
+	height: 165px;
+	background: #fff;
+	border-radius: 3px;
+	padding: 70px 0 20px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box p{
+	font-size: 20px;
+	color: #333;
+	width: 430px;
+	height: 26px;
+	text-align: center;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .yesNo{
+	width: 214px;
+	height: 42px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .yesNo div{
+	width: 94px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px solid #845F3F;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .quxiao{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: #CCCCCC;
+	font-size: 20px;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .quxiao:hover{
+	color: #845F3F;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .yesNo .yes{
+	color: #fff;
+	background: #845F3F;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .yesNo .yes:hover{
+	background: #CFBCA3;
+	border: 1px solid #CFBCA3;
+	transition: background .3s linear;
+	transition: border .3s linear;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .yesNo .no{
+	color: #666;
+}
+.main .container .cartBox .cartShops .deleteShop .deleteShop-box .yesNo .no:hover{
+	background: #845F3F;
+	color: #fff;
+	transition: background .3s linear;
+}
+.main .container .cartBox .cartShops div .cart_chick {
+	width: 20px;
+	font-size: 18px;
+	color: #E0E0E0;
+}
+.main .container .cartBox .cartShops .cart_name{
+	width: 100%;
+	height: 19px;
+	padding: 47px 0 17px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.main .container .cartBox .cartShops .cart_name div{
+	display: inline-block;
+	font-size: 14px;
+	height: 19px;
+	line-height: 19px;
+}
+.main .container .cartBox .cartShops .cart_name .name_d1{
+	width: 932px;
+	color: #333;
+	margin-left: 20px;
+}
+.main .container .cartBox .cartShops .cart_name .name_d2{
+	color: #999;
+}
+.main .container .cartBox .cartShops #cartInfo{
+	width: 1080px;
+	/* height: 142px; */
+	/* display: flex; */
+	font-size: 14px;
+}
+.main .container .cartBox .cartShops #cartInfo2{
+	width: 1080px;
+	/* height: 142px; */
+	/* display: flex; */
+	font-size: 14px;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_chick{
+	width: 20px;
+	font-size: 18px;
+	color: #E0E0E0;
+	height: 142px;
+	line-height: 142px;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox{
+	display: flex;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.main .container .cartBox .cartShops .cartInfo .oneBox div{
+	height: 142px;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_img{
+	margin-left: 20px;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_img img{
+	width: 120px;
+	height: 120px;
+	margin-top: 10px;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_info{
+	width: 235px;
+	height: 88px;
+	padding: 35px 90px 27px 5px;
+	overflow: hidden;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_info span:hover{
+	color: #845F3F;
+}
+
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_info .selectService{
+	margin-top: 20px;
+	width: 61px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	padding: 2px 4px;
+	border: 1px solid #444555;
+	position: relative;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_info .selectService i{
+	position: absolute;
+	right: 1px;
+	top: 4px;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_price{
+	width: 215px;
+	height: 72px;
+	line-height: 72px;
+	padding: 35px 0;
+	color: #333;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_count{
+	/* width: 205px; */
+	height: 30px;
+	border: 1px solid #D6D6D6;
+	margin-top: 55px;
+	margin-left: -45px;
+}
+
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_count input {
+	border: 0;
+	outline: none;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	border-left: 1px solid #D6D6D6;
+	border-right: 1px solid #D6D6D6;
+	float: left;
+	padding: 3px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_count span {
+	width: 36px;
+	height: 30px;
+	color: #805E3F;
+	line-height: 30px;
+	text-align: center;
+	font-size: 24px;
+	float: left;
+	font-weight: bold;
+}
+
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_count .num-less {
+	color: #ccc;
+}
+
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_amount{
+	width: 133px;
+	height: 72px;
+	line-height: 72px;
+	padding: 35px 0;
+	color: #C00000;
+	margin-left: 120px;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_operating{
+	width: 13px;
+	height: 72px;
+	line-height: 72px;
+	padding: 35px 0;
+	color: #CCCCCC;
+}
+.main .container .cartBox .cartShops .cartInfo .oneBox .info_operating:hover{
+	color: #845F3F;
+}
+.main .container .cartBox .settlement {
+	width: 1080px;
+	height: 80px;
+	background: #FAFAFA;
+	display: flex;
+	line-height: 80px;
+}
+.main .container .cartBox .settlement span{
+	font-size: 18px;
+	color: #333;
+	padding: 0 8px;
+}
+
+.main .container .cartBox .settlement .set_chick{
+	width: 20px;
+	color: #E0E0E0;
+	height: 142px;
+	line-height: 142px;
+	height: 80px;
+	line-height: 80px;
+}
+.main .container .cartBox .settlement div{
+	font-size: 18px;
+}
+.main .container .cartBox .settlement #total{
+	margin-left: 396px;
+	width: 200px;
+	height: 80px;
+	text-align: center;
+}
+.main .container .cartBox .settlement #total span{
+	color: #C00000;
+}
+
+.main .container .cartBox .settlement #goBuy{
+	width: 200px;
+	height: 80px;
+	text-align: center;
+	color: #fff;
+	background: #A9010D;
+	line-height: 80px;
+	margin-left: 32px;
+}
+.main .container .cartBox .settlement #goBuy:hover{
+	background: #C90214;
+}
+
+.main .container .cartNot {
+	width: 1080px;
+	height: 239px;
+	padding: 100px 0;
+	display: none;
+}
+
+.main .container .cartNot .cart_img {
+	width: 153px;
+	height: 132px;
+	margin: 0 auto;
+	background: url(../img/cartNot.png);
+}
+
+.main .container .cartNot p {
+	width: 1080px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	margin-top: 24px;
+}
+
+.main .container .cartNot .goLook {
+	width: 83px;
+	height: 41px;
+	padding: 0 6px;
+	margin: 0 auto;
+	border: 1px solid #666666;
+	color: #666;
+	line-height: 41px;
+	text-align: center;
+	margin-top: 21px;
+	border-radius: 3px;
+}
+
+.main .container .cartNot .goLook:hover {
+	background: #845F3F;
+	color: #fff;
+	transition: background .3s linear;
+}
+
+
+.main .container .cartNull {
+	width: 1080px;
+	height: 239px;
+	padding: 100px 0;
+	display: none;
+}
+
+.main .container .cartNull .cart_img {
+	width: 153px;
+	height: 132px;
+	margin: 0 auto;
+	background: url(../img/orderNull.png);
+}
+
+.main .container .cartNull p {
+	width: 1080px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	margin-top: 24px;
+}
+
+.main .container .cartNull .goLook {
+	width: 83px;
+	height: 41px;
+	padding: 0 6px;
+	margin: 0 auto;
+	border: 1px solid #666666;
+	color: #666;
+	line-height: 41px;
+	text-align: center;
+	margin-top: 21px;
+	border-radius: 3px;
+}
+
+.main .container .cartNull .goLook:hover {
+	background: #845F3F;
+	color: #fff;
+	transition: background .3s linear;
+}

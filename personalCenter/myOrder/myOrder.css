@@ -1,0 +1,129 @@
+.main .container .bBox .rgtBox .myList{
+	width: 840px;
+	height: 35px;
+	/* background: #00FF00; */
+	border-bottom: 1px solid #E7E7E7;
+}
+.main .container .bBox .rgtBox .myList ul li{
+	float: left;
+	width: auto;
+	height: 21px;
+	margin-right: 40px;
+	color: #4a4a4a;
+	padding: 6px 0;
+}
+.main .container .bBox .rgtBox .myList ul .mybottom{
+	color: ##845f3f;
+	border-bottom: #845F3F;
+}
+.main .container .bBox .rgtBox .myList ul .trash{
+	float: right;
+	margin-right: 10px;
+}
+.main .container .bBox .rgtBox .myBox{
+	width: 840px;
+	height: 500px;
+	/* background: #99f; */
+}
+.main .container .bBox .rgtBox .myBox .myOrder{
+	width: 840px;
+	height: 289px;
+	/* background: #0ff; */
+	padding: 30px 0 15px;
+	margin-top: 110px;
+}
+.main .container .bBox .rgtBox .myBox .myOrder .orderNull{
+	height: 140px;
+	width: 154px;
+	background: url(../../img/orderNull.png) no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+}
+.main .container .bBox .rgtBox .myBox .myOrder p{
+	width: 840px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	margin-top: 24px;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder{
+	width: 840px;
+	height: 289px;
+	/* background: #0ff; */
+	padding: 30px 0 15px;
+	border-bottom: 1px solid #E7E7E7;
+	display: none;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .sOrderTop{
+	width: 820px;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .sOrderInfo{
+	width: 808px;
+	height: 124px;
+	padding: 10px 32px 10px 0;
+	/* background: red; */
+	display: flex;
+	border-bottom: 1px dashed #E7E7E7;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .sOrderInfo div{
+	font-size: 14px;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .sOrderInfo .infoImg{
+	height: 120px;
+	width: 120px;
+	background: url(../../img/other-13.png) no-repeat center center;
+	background-size: cover;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .sOrderInfo .sinfo{
+	height: auto;
+	width: 650px;
+	margin-top: 35px;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .sOrderInfo .orderCount{
+	height: 120px;
+	line-height: 120px;
+	float: right;
+	color: #666;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .total{
+	width: 840px;
+	height: 64px;
+	line-height: 64px;
+	font-size: 14px;
+	color: #4A4A4A;
+	text-align: right;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .anniu{
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .anniu span{
+	display: block;
+	float: right;
+	width: 110px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	color: #666;
+	border: 1px solid #845F3F;
+	margin-left: 20px;
+	border-radius: 3px;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .anniu .gogogo{
+	background: #845F3F;
+	color: #fff;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .anniu span:hover{
+	background: #845F3F;
+	color: #fff;
+	transition: background .3s linear;
+	transition: color .3s linear;
+}
+.main .container .bBox .rgtBox .myBox .shopOrder .anniu .gogogo:hover{
+	background: #CDBAA1;
+	transition: background .3s linear;
+}

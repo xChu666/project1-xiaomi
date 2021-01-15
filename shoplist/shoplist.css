@@ -1,0 +1,98 @@
+.main{
+	width: 100%;
+	height: 100%;
+	background: #F2F2F2;
+	padding-bottom: 100px;
+	margin-bottom: 0;
+}
+
+.main .container{
+	width: 1080px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.main .container .shop-num{
+	font-size: 14px;
+	color: #333333;
+	margin-top: 24px;
+	margin-bottom: 12px;
+}
+
+.main .container .box{
+	/* height: 900px; */
+	width: 100%;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.main .container .box .sbox{
+	width: calc((100% - 15px ) / 4);
+	height: 267px;
+	background-color: #fff;
+	margin-bottom: 3px;
+}
+.main .container .box .sbox:hover{
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+	transition: box-shadow .3s linear;
+}
+.main .container .pages-container{
+	width: 1080px;
+	height: 32px;
+	margin-top: 32px;
+}
+.main .container .pages-container .pages{
+	width: 158px;
+	height: 32px;
+	margin: 0 auto;
+}
+.main .container .pages-container .pages span{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.main .container .pages-container .pages .page-num{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #845F3F;
+	background: #845F3F;
+	color: #fff;
+}
+.main .container .pages-container .pages .page-left{
+	width: 62px;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid #CCCCCC;
+	border-right: none;
+}
+.main .container .pages-container .pages .page-right{
+	width: 62px;
+	border-radius: 0 5px 5px 0 ;
+	border: 1px solid #CCCCCC;
+	border-left: none;
+}
+.main .container .box .sbox .shop-img{
+	width: 195px;
+	height: 195px;
+	margin: 0 auto;
+}
+.main .container .box .sbox .shop-img img{
+	width: 195px;
+	height: 195px;
+}
+.main .container .box .sbox .shop-info{
+	width: 100%;
+	height: 26px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+	color: #333;
+}
+.main .container .box .sbox .shop-price{
+	width: 100%;
+	height: 26px;
+	text-align: center;
+	font-size: 14px;
+	color: #a92112;
+}

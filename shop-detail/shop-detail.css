@@ -1,0 +1,575 @@
+/* .main{
+	width: 1080px;
+} */
+
+.main .container {
+	width: 1080px;
+	/* background: red; */
+}
+
+.main .container .buy-info {
+	margin-top: 59px;
+	width: 1080px;
+	min-height: 372px;
+	/* background: #0f0; */
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 66px;
+}
+
+.main .container .buy-info .shop-imgs {
+	height: 374px;
+	width: 467px;
+	/* background: #99f; */
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.main .container .buy-info .shop-imgs .imgs-big {
+	width: 372px;
+	height: 372px;
+	border: 1px solid #ECECEC;
+	position: relative;
+}
+.main .container .buy-info .shop-imgs .imgs-big img{
+	width: 372px;
+	height: 372px;
+	position: center center;
+	display: none;
+}
+
+.main .container .buy-info .shop-imgs .imgs-small {
+	width: 83px;
+	height: 374px;
+	position: relative;
+}
+.main .container .buy-info .shop-imgs .imgs-small #previous{
+	display: none;
+}
+.main .container .buy-info .shop-imgs .imgs-small #next{
+	display: none;
+}
+
+.main .container .buy-info .shop-imgs .imgs-small:hover #previous{
+	display: block;
+	transition: display .5s linear;
+}
+.main .container .buy-info .shop-imgs .imgs-small:hover #next{
+	display: block;
+	transition: display .5s linear;
+}
+.main .container .buy-info .shop-imgs .imgs-small #previous{
+	position: absolute;
+	border: none;
+	width: 83px;
+	height: 16px;
+	border: none;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	line-height: 16px;
+	color: #f0f0f0;
+	top: 0;
+}
+.main .container .buy-info .shop-imgs .imgs-small #next{
+	position: absolute;
+	border: none;
+	width: 83px;
+	height: 16px;
+	border: none;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	line-height: 16px;
+	color: #f0f0f0;
+	bottom: -13px;
+}
+
+.main .container .buy-info .shop-imgs .imgs-small div {
+	width: 81px;
+	height: 81px;
+	border: 1px solid #ECECEC;
+	margin-bottom: 14px;
+}
+.main .container .buy-info .shop-imgs .imgs-small div img{
+	width: 81px;
+	height: 81px;
+	position: center center;
+}
+.main .container .buy-info .shop-imgs .imgs-small .small-1{
+	border: 1px solid #845F3F;
+}
+.main .container .buy-info .shop-imgs .imgs-small .small-4 {
+	margin-bottom: 0;
+}
+.main .container .buy-info .shop-imgs #shopTitle{
+	width: 250px;
+	height: 30px;
+	border-radius: 3px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	position: fixed;
+	top: 145px;
+	left: 40%;
+	z-index: 20;
+}
+.main .container .buy-info .shop-imgs .blocks{
+	display: none;
+}
+.main .container .buy-info .shop-imgs .errorTitle{
+	background: #b00000;
+	display: block;
+}
+.main .container .buy-info .shop-imgs .correctTitle{
+	background: #05cc05;
+	display: block;
+}
+
+.main .container .buy-info .shop-imgs #errorTitle{
+	width: 250px;
+	height: 30px;
+	border-radius: 3px;
+	background: #b00000;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	position: fixed;
+	top: 145px;
+	left: 40%;
+	z-index: 20;
+}
+
+.main .container .buy-info .shop-detail {
+	height: 478px;
+	width: 561px;
+	/* background: #99f; */
+}
+
+.main .container .buy-info .shop-detail .shop-name {
+	font-size: 20px;
+	color: #333;
+	height: 27px;
+	width: 100%;
+	position: relative;
+}
+
+.main .container .buy-info .shop-detail .shop-name span {
+	position: absolute;
+	left: 75px;
+}
+
+.main .container .buy-info .shop-detail .shop-name img {
+	position: absolute;
+	width: 65px;
+	height: 24px;
+	top: 2px;
+}
+
+.main .container .buy-info .shop-detail .introduction {
+	width: 100%;
+	font-size: 12px;
+	color: #999;
+	margin-top: 4px;
+}
+
+.main .container .buy-info .shop-detail .gray-frame {
+	width: 551px;
+	height: 107px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #F9F9F9;
+	margin: 26px 0;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-price {
+	height: 37px;
+	width: 100%;
+	display: flex;
+	padding: 5px 0;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-price .price-1 {
+	font-size: 12px;
+	display: block;
+	width: 48px;
+	height: 32px;
+	line-height: 40px;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-price .price-2 {
+	font-size: 14px;
+	color: #c00000;
+	line-height: 50px;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-price .price-3 {
+	font-size: 30px;
+	color: #c00000;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-service {
+	height: 37px;
+	width: 100%;
+	display: flex;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-service .service-1 {
+	font-size: 12px;
+	display: block;
+	width: 48px;
+	height: 32px;
+	line-height: 40px;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-service .service-1 i {
+	font-size: 12px;
+	color: #c00000;
+	margin-left: -5px;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-service .service-2 {
+	font-size: 16px;
+	color: #333;
+	line-height: 37px;
+}
+
+.main .container .buy-info .shop-detail .gray-frame .shop-service .service-2 i {
+	color: #c00000;
+}
+
+.main .container .buy-info .shop-detail .shop-address {
+	font-size: 14px;
+	height: 14px;
+	width: 100%;
+	line-height: 14px;
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.main .container .buy-info .shop-detail .shop-address .add-1 {
+	font-size: 12px;
+}
+
+.main .container .buy-info .shop-detail .shop-address .add-3 {
+	color: 666;
+}
+
+.main .container .buy-info .shop-detail .shop-address .add-3:hover {
+	color: #845f3f;
+	cursor: pointer;
+	text-decoration: underline;
+	/* display: flex; */
+}
+
+.main .container .buy-info .shop-detail .shop-kind div {
+	font-size: 12px;
+	font-weight: 400;
+	width: 100%;
+	position: relative;
+}
+
+.main .container .buy-info .shop-detail .shop-kind div span {
+	width: 50px;
+	line-height: -6px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main .container .buy-info .shop-detail .shop-kind div div {
+	display: inline-block;
+	width: auto;
+	height: 30px;
+	line-height: 20px;
+	border: 1px solid #D6D6D6;
+	padding: 4px 20px;
+	box-sizing: border-box;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+.main .container .buy-info .shop-detail .shop-kind div .border{
+	border: 1px solid #845F3F;
+}
+
+
+.main .container .buy-info .shop-detail .shop-kind .shop-version {
+	margin-top: 15px;
+}
+
+.main .container .buy-info .shop-detail .count {
+	height: 32px;
+	width: 100%;
+	display: flex;
+	margin-top: 30px;
+}
+
+.main .container .buy-info .shop-detail .count span {
+	height: 32px;
+	width: 50px;
+	line-height: 32px;
+	font-size: 12px;
+	color: #333333;
+	display: inline-block;
+}
+
+.main .container .buy-info .shop-detail .count .jishu {
+	height: 30px;
+	/* width: 129px; */
+	border: 1px solid #D6D6D6;
+}
+
+.main .container .buy-info .shop-detail .count .jishu input {
+	border: 0;
+	outline: none;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	border-left: 1px solid #D6D6D6;
+	border-right: 1px solid #D6D6D6;
+	float: left;
+	padding: 3px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.main .container .buy-info .shop-detail .count .jishu span {
+	width: 36px;
+	height: 30px;
+	color: #805E3F;
+	line-height: 30px;
+	text-align: center;
+	font-size: 24px;
+	float: left;
+	font-weight: bold;
+}
+
+.main .container .buy-info .shop-detail .count .jishu #num-less {
+	color: #ccc;
+}
+
+.main .container .buy-info .shop-detail .btn-buy {
+	margin-top: 15px;
+	width: 100%;
+	height: 32px;
+	display: flex;
+}
+
+.main .container .buy-info .shop-detail .btn-buy .button {
+	border-radius: 2px;
+	width: 165px;
+	height: 50px;
+	border: 1px solid #845F3F;
+	margin-right: 15px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	color: #845f3f;
+}
+
+.main .container .buy-info .shop-detail .btn-buy .b1 {
+	background: #845F3F;
+	color: #fff;
+}
+
+.main .container .buy-info .shop-detail .btn-buy .b1:hover {
+	background: #CEBCA3;
+	border: 1px solid #CEBCA3;
+	transition: background .3s linear;
+}
+
+.main .container .buy-info .shop-detail .btn-buy .b2:hover {
+	background: #845F3F;
+	color: #fff;
+	transition: background .3s linear;
+}
+
+.main .container .buy-info .shop-detail .btn-buy .favorite {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #CCCCCC;
+	color: #999;
+	margin-right: 15px;
+	font-size: 12px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.main .container .buy-info .shop-detail .btn-buy .favorite:hover {
+	border: 1px solid #845F3F;
+	background: #845F3F;
+	color: #fff;
+	transition: background .3s linear;
+}
+
+.main .container .buy-info .shop-detail .btn-buy .favorite .icon {
+	font-size: 20px;
+	margin-top: 3px;
+}
+
+.main .container .other-info {
+	width: 1080px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main .container .other-info .detail {
+	width: 774px;
+	/* background: #003AB5; */
+}
+
+.main .container .other-info .detail .detail-top {
+	width: 774px;
+	height: 44px;
+	background: #E7E7E7;
+}
+
+.main .container .other-info .detail .detail-top span {
+	height: 42px;
+	width: 129px;
+	display: inline-block;
+	text-align: center;
+	line-height: 44px;
+	color: #333;
+	font-size: 13px;
+}
+
+.main .container .other-info .detail .detail-top .det-1 {
+	border-bottom: 2px solid #845F3F;
+}
+
+.main .container .other-info .detail .detail-top .det-2 {
+	display: inline;
+	color: #999;
+}
+
+.main .container .other-info .detail .detail-img {
+	width: 774px;
+}
+
+.main .container .other-info .detail .detail-img img {
+	width: 100%;
+	display: block;
+}
+
+.main .container .other-info .detail .detail-comment {
+	width: 100%;
+	height: auto;
+}
+
+.main .container .other-info .other-shop {
+	/* height: 600px; */
+	width: 262px;
+	/* background-color: yellow; */
+}
+
+.main .container .other-info .other-shop .other-top {
+	width: 100%;
+	height: 43px;
+	/* background: #f00; */
+	border-bottom: 1px solid #E7E7E7;
+	display: flex;
+}
+
+.main .container .other-info .other-shop .other-top .other-logo {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	background: url(../img/xiaomi-logo.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .other-info .other-shop .other-top .other-go {
+	width: 48px;
+	height: 30px;
+	line-height: 28px;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #845f3f;
+	text-align: center;
+	font-size: 13px;
+	margin-left: 18px;
+}
+.main .container .other-info .other-shop .other-top .other-go:hover{
+	background-color: #B39A7E;
+	transition: background-color .3s linear;
+}
+.main .container .other-info .other-shop .other-top .other-ziying{
+	width: 156px;
+	height: 36px;
+	/* background: #003AB5; */
+	color: #333;
+	font-size: 12px;
+}
+
+.main .container .other-info .other-shop .other-top .other-ziying div span{
+	font-size: 14px;
+}
+.main .container .other-info .other-shop .other-top .other-ziying div p{
+	display: inline-block;
+	width: 32px;
+	height: 16px;
+	border-radius: 8px;
+	color: #bf1111;
+	border: 1px solid #bf1111;
+	text-align: center;
+	margin-left: 6px;
+}
+.main .container .other-info .other-shop .other-recommend{
+	height: 42px;
+	width: 262px;
+	line-height: 42px;
+	text-align: center;
+	color: #333;
+}
+.main .container .other-info .other-shop .other-box{
+	width: 262px;
+}
+.main .container .other-info .other-shop .other-box .other-sbox{
+	width: 260px;
+	height: 299px;
+	border: 1px solid #F4F4F4;
+	margin-bottom: 3px;
+}
+.main .container .other-info .other-shop .other-box .other-sbox:hover{
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+	transition: box-shadow .3s linear;
+}
+
+.main .container .other-info .other-shop .other-box .other-sbox .sbox-img{
+	height: 154px;
+	width: 154px;
+	margin: 22px auto;
+	/* background: #0f0; */
+}
+.main .container .other-info .other-shop .other-box .other-sbox .sbox-img img{
+	height: 154px;
+	width: 154px;
+	position: center center;
+}
+.main .container .other-info .other-shop .other-box .other-sbox p{
+	text-align: center;
+	height: 38px;
+	width: 262px;
+	line-height: 38px;
+	color: ##845f3f;
+}
+.main .container .other-info .other-shop .other-box .other-sbox .sbox-bot{
+	height: 63px;
+	width: 262px;
+	background: #F4F4F4;
+}
+.main .container .other-info .other-shop .other-box .other-sbox .sbox-bot p{
+	height: 35px;
+	width: 262px;
+	line-height: 35px;
+	color: #333;
+}
+.main .container .other-info .other-shop .other-box .other-sbox .sbox-bot .other-price{
+	height: 24px;
+	width: 262px;
+	line-height: 24px;
+	color: #c33300;
+}
+.main .container .other-info .other-shop .other-box .other-sbox .sbox-bot .other-price span{
+	font-size: 12px;
+}

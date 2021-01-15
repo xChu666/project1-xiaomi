@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+}
+.header{
+	width: 100%;
+	height: 62px;
+	background: #000;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+}
+.header .close{
+	color: #D2D0D0;
+	height: 18px;
+	width: 18px;
+	line-height: 18px;
+	border-radius: 50%;
+	border: 1px solid #D2D0D0;
+	margin-top: 20px;
+	margin-left: 7px;
+	text-align: center;
+}
+.header .close:hover{
+	cursor: pointer;
+}
+.header .headLogo{
+	height: 43px;
+	width: 43px;
+	margin-left: 7px;
+	background: url(../img/appdown.png) no-repeat center center;
+	background-size: cover;
+	margin: 9px 0 0 7px;
+}
+.header .word{
+	height: 35px;
+	margin-top: 14px;
+	color: #fff;
+	margin-left: 5px;
+}
+.header .headImg{
+	background: url(../img/snapUp.png) no-repeat center center;
+	background-size: cover;
+	height: 30px;
+	width: 72px;
+	position: absolute;
+	right: 10px;
+	top: 16px;
+}
+
+.main{
+	width: 100%;
+	height: calc(100% - 62px);
+	display: flex;
+	flex-direction: column;
+	
+}
+.main .container{
+	width: 610px;
+	margin: 0 auto;
+	/* background: #01EC4C; */
+	position: relative;
+	flex: 1;
+}
+.main .container .body{
+	width: 610px;
+}
+
+
+.applets{
+	height: 160px;
+	width: 140px;
+	background: url(../img/small_cheng.png);
+	position: fixed;
+	right: 13%;
+	top: 62px;
+}
+.applets div{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #E0E0E0;
+}
+.applets div:hover{
+	cursor: pointer;
+}
+.home{
+	width: 41px;
+	height: 41px;
+	background: url(../img/home.png) no-repeat center center;
+	background-size: cover;
+	position: fixed;
+	right: 20%;
+	bottom: 50px;
+}

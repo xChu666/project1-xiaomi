@@ -1,0 +1,665 @@
+.main .container .carte {
+	height: 358px;
+	width: 100%;
+	display: flex;
+}
+
+.main .container .carte .aside {
+	z-index: 100;
+	height: 100%;
+	width: 221px;
+	background-color: #9F8052;
+}
+
+.main .container .carte .aside>ul {
+	margin: auto 0;
+	position: relative;
+}
+
+.main .container .carte .aside>ul>li {
+	font-size: 14px;
+	color: #fff;
+	padding: 7px 30px;
+	cursor: default;
+}
+
+.main .container .carte .aside>ul>li .smlist {
+	width: 0;
+	background-color: #fff;
+	position: absolute;
+	left: 221px;
+	top: -15px;
+	overflow: hidden;
+}
+
+.main .container .carte .aside>ul>li .smlist>div {
+	padding: 20px;
+}
+
+.main .container .carte .aside>ul>li .smlist>div .title {
+	font-size: 19px;
+	font-weight: bold;
+	color: #805E3F;
+}
+
+.main .container .carte .aside>ul>li .smlist>div .goods {
+	display: flex;
+}
+
+.main .container .carte .aside>ul>li .smlist>div .goods .biggoods {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin: 5px 0 5px 0;
+	height: 54px;
+	width: 100px;
+	/* background-color: yellow; */
+	line-height: 54px;
+	text-align: justify;
+	text-align-last: justify;
+}
+
+.main .container .carte .aside>ul>li .smlist>div .goods .smallgoods {
+	border-bottom: 1px dashed #E6E6E6;
+	width: 100%;
+	color: #333;
+	display: flex;
+	height: 54px;
+	margin: auto 0 auto 20px;
+	flex-wrap: wrap;
+	padding: 5px 0;
+	/* background-color: red; */
+}
+
+.main .container .carte .aside>ul>li .smlist>div .goods .smallgoods>span {
+	padding: 0 10px;
+	margin: auto 0;
+	display: block;
+	width: auto;
+}
+
+.main .container .carte .aside>ul>li:hover {
+	background-color: #8A6F47;
+}
+
+.main .container .carte .aside>ul>li .list:hover {
+	color: #DFAF7E;
+}
+
+.main .container .carte .aside>ul>li:hover .smlist {
+	width: 859px;
+	border: 1px solid #E7E7E7;
+}
+
+.main .container .carte .aside>ul>li .smlist>div .goods .smallgoods>span:hover {
+	color: #cb5d03;
+}
+
+/* 轮播图和后期加 */
+.main .container .carte .banner {
+	height: 100%;
+	width: 859px;
+	position: relative;
+	overflow: hidden;
+}
+.main .container .carte .banner #num{
+	position: absolute;
+	bottom: 10px;
+	left: 360px;
+	display: flex;
+	width: 130px;
+	height: 11px;
+	justify-content: space-around;
+}
+
+.main .container .carte .banner #anniu-left{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	left: 10px;
+	top: 150px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 35px;
+	color: #fff;
+}
+
+.main .container .carte .banner #anniu-right{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	right: 10px;
+	top: 150px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 35px;
+	color: #fff;
+}
+
+.main .container .carte .banner #anniu-left:hover{
+	background: #845F3F;
+}
+.main .container .carte .banner #anniu-right:hover{
+	background: #845F3F;
+}
+
+.main .container .carte .banner #num span {
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	border: 1px solid #D0D0D0;
+}
+.main .container .carte .banner #num .qian{
+	width: 10px;
+	height: 10px;
+	border: 1px solid #D0D0D0;
+}
+.main .container .carte .banner #num .hou{
+	margin-top: -2px;
+	width: 7px;
+	height: 7px;
+	background: #A7936E;
+	border: 4px solid #D4D4D4;
+}
+
+
+.main .container .carte .banner #img{
+	height: 358px;
+	width: 859px;
+	overflow: hidden;
+	display: flex;
+	/* flex-wrap: wrap; */
+}
+.main .container .carte .banner #img img{
+	height: 358px;
+	width: 859px;
+}
+.main .container .spike .title #qiang{
+	font-size: 18px;
+	color: #A92112;
+	position: relative;
+}
+.main .container .spike .title #qiang #time{
+	position: absolute;
+	display: flex;
+	width: 100px;
+	height: 23px;
+	justify-content: space-around;
+	left: 100px;
+	top: 0;
+}
+.main .container .spike .title #qiang #time div{
+	width: 23px;
+	height: 23px;
+	background: #B04337;
+	text-align: center;
+	line-height: 23px;
+	color: #fff;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main .container .hotlist {
+	height: 189px;
+	width: 100%;
+	border-bottom: 1px solid #E7E7E7;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+}
+
+.main .container .hotlist>div {
+	height: 100%;
+	width: 10%;
+	/* background-color: #333333; */
+}
+
+.main .container .hotlist>div:hover{
+	cursor: pointer;
+}
+
+.main .container .hotlist>div .icon {
+	height: 80px;
+	width: 80px;
+	margin: 50px auto 20px auto;
+	/* background-color: red; */
+}
+
+.main .container .hotlist>div .txt {
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+}
+
+.main .container .hotlist .hot1 .icon {
+	background: url(../img/hot-1.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .hotlist .hot2 .icon {
+	background: url(../img/hot-2.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .hotlist .hot3 .icon {
+	background: url(../img/hot-3.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .hotlist .hot4 .icon {
+	background: url(../img/hot-4.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .hotlist .hot5 .icon {
+	background: url(../img/hot-5.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .crowd-funding {
+	width: 1080px;
+	height: 305px;
+	/* background-color: #CB5D03; */
+	margin: 35px 0;
+}
+
+.main .container .crowd-funding .crowdtop {
+	height: 37px;
+	width: 100%;
+	font-size: 26px;
+	/* background-color:blue; */
+	color: #333;
+	position: relative;
+}
+
+.main .container .crowd-funding .crowdtop>span {
+	font-size: 14px;
+	color: #999;
+}
+
+.main .container .crowd-funding .crowdtop .more {
+	position: absolute;
+	right: 3px;
+	bottom: 5px;
+}
+
+.main .container .crowd-funding .crowdtop .more:hover {
+	color: #845F3F;
+	cursor: default;
+}
+
+.main .container .crowd-funding .shop {
+	height: 248px;
+	width: 1080px;
+	/* background-color: #00ff00; */
+	display: flex;
+	overflow: hidden;
+}
+
+.main .container .crowd-funding .shop>div {
+	height: 100%;
+	width: 537px;
+	background-color: #F9F3E9;
+	display: flex;
+	position: relative;
+}
+.main .container .crowd-funding .shop>div:hover{
+	cursor: pointer;
+}
+
+.main .container .crowd-funding .shop>div .shop-info {
+	padding: 25px 0 0 23px;
+}
+
+.main .container .crowd-funding .shop>div .shop-info>span {
+	padding-right: 60px;
+	display: block;
+	width: 260px;
+	overflow: hidden;
+	height: 20px;
+	padding: 10px 0;
+}
+
+.price .tag {
+	font-size: 15px;
+	color: #a92112;
+}
+
+.price .qi {
+	font-size: 12px;
+	color: #a92112;
+}
+
+.main .container .crowd-funding .shop>div .shop-info .price {
+	margin-top: 20px;
+	color: #a92112;
+}
+
+.main .container .crowd-funding .shop .shop-l .shop-image {
+	width: 200px;
+	height: 200px;
+	background: url(../img/yang-l.png) no-repeat center center;
+	background-size: cover;
+	margin-right: -20px;
+	position: absolute;
+	right: 36px;
+	bottom: 50px;
+}
+
+.main .container .crowd-funding .shop>div .support {
+	position: absolute;
+	width: 100%;
+	height: 25px;
+	background-color: #fff;
+	bottom: 0;
+	display: flex;
+	padding-top: 10px;
+}
+
+.main .container .crowd-funding .shop .shop-l .support {
+	border-top: 3px solid #E3E1E2;
+}
+
+.main .container .crowd-funding .shop .pin1 .support {
+	border-top: 3px solid #FE9601;
+}
+
+.main .container .crowd-funding .shop .pin2 .support {
+	border-top: 3px solid #FC9400;
+}
+
+.main .container .crowd-funding .shop>div .support .lft {
+	position: absolute;
+	left: 10px;
+	bottom: ;
+}
+
+.main .container .crowd-funding .shop>div .support .rgt {
+	position: absolute;
+	right: 3px;
+	bottom: 0;
+}
+
+.main .container .crowd-funding .shop .shop-r .shop-image {
+	width: 130px;
+	height: 130px;
+	margin-right: -20px;
+	position: absolute;
+	right: 36px;
+	bottom: 50px;
+}
+
+.main .container .crowd-funding .shop .pin1 .shop-image {
+	background: url(../img/yang-c.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .crowd-funding .shop .pin2 .shop-image {
+	background: url(../img/yang-r.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main .container .crowd-funding .shop .shop-r {
+	height: 100%;
+	width: 266px;
+	background-color: #f8f8f8;
+	margin-left: 10px;
+}
+
+.main .container>div {
+	height: 411px;
+	width: 1080px;
+	/* background-color: red; */
+}
+
+.main .container>div .title {
+	width: 1080px;
+	height: 37px;
+	/* background-color: greenyellow; */
+	margin: 0 0 20px;
+}
+
+.main .container>div .title {
+	height: 37px;
+	width: 100%;
+	font-size: 26px;
+	/* background-color:blue; */
+	color: #333;
+	position: relative;
+}
+
+.main .container>div .title>span {
+	font-size: 14px;
+	color: #999;
+}
+
+.main .container>div .title .more {
+	position: absolute;
+	right: 3px;
+	bottom: 5px;
+}
+
+.main .container>div .title .more:hover {
+	color: #845F3F;
+	cursor: default;
+}
+
+.main .container>div .contact {
+	height: 354px;
+	width: 1080px;
+	/* background-color: #FAF6EF; */
+	display: flex;
+	justify-content: space-between;
+}
+
+.main .container>div .contact>div {
+	width: 266px;
+	height: 354px;
+	background-color: #FAF6EF;
+}
+
+.main .container>div .contact>div:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: box-shadow .3s linear;
+	cursor: pointer;
+}
+
+.main .container>div .contact>div>img {
+	height: 266px;
+	width: 266px;
+}
+
+.main .container>div .contact>div .byshop {
+	width: 266px;
+	height: 60px;
+	/* background-color: #FAF6EF; */
+	padding: 13px 0px 10px;
+}
+
+.main .container>div .contact>div .byshop .info {
+	font-size: 19px;
+	color: #333;
+	text-align: center;
+}
+
+.main .container>div .contact>div .byshop .price {
+	height: 31px;
+	/* background-color: #0f0; */
+	margin: 10px 0;
+	text-align: center;
+}
+
+.main .container .newproduc {
+	margin-top: 50px;
+}
+
+.main .container .newproduc .contact>div {
+	width: 266px;
+	height: 380px;
+	background-color: #fff;
+}
+
+.main .container .newproduc .contact>div:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: box-shadow .3s linear;
+}
+
+.main .container .newproduc .contact>div .jianjie {
+	color: #666;
+	font-size: 14px;
+	line-height: 18px;
+	height: 18px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+.main .container .exclusive {
+	margin-top: 50px;
+	width: 1080px;
+	height: 100%;
+}
+
+.main .container .exclusive .title {
+	height: 37px;
+	width: 100%;
+	font-size: 26px;
+	color: rgb(51, 51, 51);
+}
+
+.main .container .exclusive .shangpin {
+	width: 1080px;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main .container .exclusive .shangpin>div {
+	width: 264px;
+	height: 350px;
+	background-color: #F8F8F8;
+	margin-bottom: 5px;
+	border: 1px solid #e7e7e7;
+}
+
+.main .container .exclusive .shangpin>div:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: box-shadow .3s linear;
+	cursor: pointer;
+
+}
+
+.main .container .exclusive .shangpin>div .shangpic {
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 3px;
+	width: 194px;
+	height: 195px;
+	background-color: #fff;
+	position: relative;
+}
+
+.main .container .exclusive .shangpin>div .shangpic .xuanze {
+	position: absolute;
+	padding: 3px;
+	left: 8px;
+	top: 8px;
+	width: 16px;
+	line-height: 18px;
+	font-size: 15px;
+	text-align: center;
+	word-wrap: break-word;
+	border-radius: 4px;
+	border: 1px solid #9f8052;
+	background-color: transparent;
+	color: #9f8052;
+}
+
+.main .container .exclusive .shangpin>div .shangpic>img {
+	height: 195px;
+	width: 195px;
+	margin-left: -0.5px;
+}
+
+.main .container .exclusive .shangpin>div .jieshao {
+	color: #845f3f;
+	font-size: 16px;
+	line-height: 20px;
+	height: 20px;
+	margin-top: 0;
+	text-align: center;
+	padding: 10px 12px;
+	background-color: #fff;
+	width: 240px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.main .container .exclusive .shangpin>div .jiage>div {
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.main .container .exclusive .shangpin>div .jiage>div>span {
+	border-radius: 2px;
+	margin-left: 5px;
+	vertical-align: bottom;
+	font-size: 13px;
+	padding: 0 5px;
+	color: #fff;
+}
+
+.main .container .exclusive .shangpin>div .jiage>p {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.main .container .exclusive .shangpin>div .jiage {
+	/* margin-top: 18px; */
+	background: #f8f8f8;
+}
+
+.main .container .exclusive .shangpin>div .jiage .p1 {
+	font-size: 18px;
+	line-height: 22px;
+	height: 22px;
+	/* margin-top: -10px; */
+	color: #333;
+	padding: 0 30px;
+	width: 204px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

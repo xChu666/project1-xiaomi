@@ -1,0 +1,76 @@
+.main{
+	width: 100%;
+	height: 458px;
+	background: #F2F2F2;
+	margin: 0;
+}
+.main .container{
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.main .container .payNav{
+	height: 77px;
+	width: 100%;
+	padding: 30px 0;
+	font-size: 13px;
+	box-sizing: border-box;
+	background: #F2F2F2;
+}
+.main .container .payNav .mypay{
+	color: #999;
+}
+.main .container .payNav .mypay:hover{
+	color: #845F3F;
+}
+.main .container .payInfo{
+	width: 1080px;
+	height: 292px;
+	padding: 30px 0;
+	color: #333;
+}
+.main .container .payInfo p{
+	font-size: 28px;
+}
+.main .container .payInfo span{
+	font-size: 14px;
+	display: block;
+	line-height: 30px;
+}
+.main2{
+	width: 100%;
+	margin: 0;
+}
+.main2 .container{
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.main2 .container .paymentMethod{
+	width: 1080px;
+	height: 168px;
+	padding: 80px 0 150px;
+}
+.main2 .container .paymentMethod .selectPay{
+	width: 1080px;
+	height: 30px;
+	font-size: 18px;
+	color: #333;
+	border-bottom: 1px solid #E7E7E7;
+	line-height: 5px;
+}
+.main2 .container .paymentMethod p{
+	margin-top: 40px;
+}
+.main2 .container .paymentMethod .paySuccess{
+	width: 1080px;
+	height: 61px;
+	display: flex;
+	margin-top: 20px;
+}
+.main2 .container .paymentMethod .paySuccess div{
+	height: 59px;
+	width: 173px;
+	border: 1px solid #E7E7E7;
+	margin-right: 15px;
+}

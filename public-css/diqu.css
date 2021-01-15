@@ -1,0 +1,278 @@
+* {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.newAddressBox {
+	z-index: 10000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+.newAddressBox .newAddress {
+	height: 542px;
+	width: 660px;
+	background: #fff;
+	color: #333;
+	font-size: 14px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.newAddressBox .newAddress .newTitle {
+	width: 603px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 20px;
+	line-height: 60px;
+	font-size: 19px;
+	color: #333;
+	border-bottom: 1px solid #eee;
+}
+
+.newAddressBox .newAddress .newTitle span {
+	float: right;
+	color: #CCCCCC;
+}
+
+.newAddressBox .newAddress .newTitle span:hover {
+	color: #845F3F;
+}
+
+.newAddressBox .newAddress .input-box {
+	width: 640px;
+	height: 64px;
+	margin: 30px 20px 0;
+	position: relative;
+}
+
+.newAddressBox .newAddress .input-box input {
+	width: 275px;
+	height: 16px;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid #eee;
+	outline: none;
+}
+
+.newAddressBox .newAddress .input-box div {
+	position: absolute;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #d54843;
+	top: 50px;
+	opacity: 0;
+}
+
+.newAddressBox .newAddress .input-box .nameTitle {
+	left: 6px;
+}
+
+.newAddressBox .newAddress .input-box .phoneTitle {
+	left: 320px;
+}
+
+.newAddressBox .newAddress .input-cityBox {
+	width: 605px;
+	margin: 15px auto 0;
+	/* background: red; */
+}
+
+.newAddressBox .newAddress .input-cityBox .wrap {
+	width: 605px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.newAddressBox .newAddress .input-cityBox #city {
+	width: 585px;
+	height: 16px;
+	padding: 10px;
+	border: 1px solid #eee;
+	color: #757575;
+	outline: none;
+	display: block;
+}
+
+.newAddressBox .newAddress .textarea {
+	width: 615px;
+	height: 89px;
+	margin: 30px auto 0;
+	position: relative;
+}
+
+.newAddressBox .newAddress .textarea .city {
+	height: 38px;
+	padding: 10px;
+	margin: 5px;
+	font-size: 14px;
+	width: 583px;
+	border: 1px solid #eee;
+	resize: none;
+	outline: none;
+}
+
+.newAddressBox .newAddress .textarea .addressTitle {
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #d54843;
+	position: absolute;
+	top: 70px;
+	left: 5px;
+	opacity: 0;
+}
+
+.newAddressBox .newAddress .postal {
+	width: 620px;
+	height: 64px;
+	margin: 10px 20px 0;
+	display: flex;
+}
+
+.newAddressBox .newAddress .postal .postalNum {
+	display: block;
+	width: 275px;
+	height: 16px;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid #eee;
+	outline: none;
+}
+
+.newAddressBox .newAddress .postal .moren {
+	width: 100px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 15px;
+	color: #333;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.newAddressBox .newAddress .cityBot {
+	width: 660px;
+	height: 90px;
+	background: #F2F2F2;
+	margin-top: 31px;
+}
+
+.newAddressBox .newAddress .cityBot .cityBotBot {
+	width: 395px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.newAddressBox .newAddress .cityBot span {
+	display: inline-block;
+	width: 188px;
+	height: 40px;
+	border-radius: 2px;
+	background: #845F3F;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+.newAddressBox .newAddress .cityBot span:hover {
+	background: #D1BFA6;
+	transition: background .3s linear;
+}
+
+#PoPy {
+	position: static;
+}
+
+._citys {
+	width: 607px;
+	height: 160px;
+	display: inline-block;
+	border: 1px solid #845F3F;
+	padding: 5px;
+	position: fixed;
+	left: 50%;
+	top: 57%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	box-sizing: border-box;
+}
+
+._citys span {
+	color: #05920a;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	text-align: center;
+	border-radius: 3px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	/* border: 1px solid #05920a; */
+	cursor: pointer;
+}
+._citys span:hover{
+	color: #845F3F;
+}
+._citys0 {
+	width: 95%;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0px 5px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 6px;
+}
+
+._citys0 li {
+	display: inline-block;
+	line-height: 34px;
+	font-size: 15px;
+	color: #888;
+	width: 80px;
+	text-align: center;
+	cursor: pointer;
+}
+
+._citys1 {
+	width: 100%;
+	display: inline-block;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+._citys1 a {
+	margin-right: 10px;
+	cursor: pointer;
+	float: left;
+	border-bottom: 1px solid transparent;
+	font-size: 14px;
+	color: #333;
+}
+
+._citys1 a:hover {
+	border-bottom: 1px solid #845F3F;
+}
+
+.AreaS {
+	background-color: #05920a !important;
+	color: #fff !important;
+}

@@ -1,0 +1,392 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: #f5f5f5;
+}
+
+.log-box {
+	width: 100%;
+	height: 529px;
+	position: relative;
+	top: 15%;
+}
+
+.log-box .log {
+	width: 854px;
+	height: 544px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top: 54%;
+	transform: translate(-50%, -50%);
+}
+
+.log-box .log .switch {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	background: url(../img/icon_ercode.png);
+}
+
+.log-box .log .switch-s {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	background: url(../img/icon_ercode.png);
+	background-position: -160px 0;
+}
+
+.log-box .log .switch:hover {
+	background-position: -80px 0;
+}
+
+.log-box .log .switch-s:hover {
+	background-position: -240px 0;
+}
+
+.log-box .log .icon {
+	margin: 0 auto;
+	margin-top: 25px;
+	border-radius: 3px;
+	width: 48px;
+	height: 48px;
+	background: url(../img/xiaomi-logo.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.log-box .log p {
+	font-size: 22px;
+	padding-top: 15px;
+	/* font-weight: bold; */
+	text-align: center;
+}
+
+.log-box .log .input {
+	width: 360px;
+	height: 384px;
+	/* background: #0f0; */
+	margin: 10px auto;
+}
+
+
+.log-box .log .input input {
+	outline: none;
+	border: 1px solid #E0E0E0;
+	width: 360px;
+	height: 47px;
+	margin-bottom: 10px;
+	padding: 13px 16px 13px 14px;
+	box-sizing: border-box;
+}
+
+.log-box .log .input button {
+	border: none;
+	outline: none;
+	width: 360px;
+	height: 49px;
+	background: #FF6700;
+	text-align: center;
+	line-height: 49px;
+	margin-top: 15px;
+	color: #fff;
+}
+
+.log-box .log .input .err {
+	float: left;
+	color: #ff6700;
+	font-size: 14px;
+	margin-top: -13px;
+	opacity: 0;
+}
+
+.log-box .log .input p .erroy {
+	margin-left: 5px;
+}
+
+.log-box .log .input .way {
+	margin-top: -8px;
+	color: #ff6700;
+	font-size: 14px;
+	text-align: center;
+}
+
+.log-box .log .input .way:hover {
+	cursor: pointer;
+}
+
+.log-box .log .input .bot {
+	color: #757575;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.log-box .log .input .bot span:hover {
+	cursor: pointer;
+	color: #ff6700;
+}
+
+.log-box .log .input #phonelog .qu {
+	width: 65px;
+	height: 45px;
+	border: 1px solid #E0E0E0;
+	border-right: none;
+	display: inline-block;
+	line-height: 45px;
+	text-align: center;
+	color: #333333;
+	font-size: 13px;
+}
+
+.log-box .log .input #phonelog .get {
+	width: 111px;
+	height: 45px;
+	border: 1px solid #E0E0E0;
+	border-left: none;
+	display: inline-block;
+	line-height: 45px;
+	text-align: center;
+	color: #003AB5;
+	font-size: 13px;
+}
+
+.log-box .log .input #phonelog .get:hover {
+	cursor: pointer;
+}
+
+.log-box .log .input #phonelog #phone {
+	width: 294px;
+	float: right;
+}
+
+.log-box .log .input #phonelog #SMS {
+	width: 248px;
+	float: left;
+}
+
+.log-box .log .input #phonelog .upzuokuang {
+	border: 1px solid #FF6700;
+	border-right: none;
+}
+
+.log-box .log .input #phonelog .upyoukuang {
+	border: 1px solid #FF6700;
+	border-left: 1px solid #E0E0E0;
+}
+
+.log-box .log .input #phonelog .dowzuokuang {
+	border: 1px solid #FF6700;
+	border-right: 1px solid #E0E0E0;
+}
+
+.log-box .log .input #phonelog .dowyoukuang {
+	border: 1px solid #FF6700;
+	border-left: none;
+}
+
+
+.log-box .log .input .other {
+	margin-top: 50px;
+	width: 360px;
+	height: 85px;
+	/* background: rgba(0,0,0,.5); */
+}
+
+.log-box .log .input .other .other-word {
+	height: 20px;
+	width: 100%;
+	border-top: 1px solid #B0B0B0;
+	text-align: center;
+	font-size: 14px;
+	color: #B0B0B0;
+}
+
+.log-box .log .input .other .other-word span {
+	width: 84px;
+	margin: 0 auto;
+	display: block;
+	margin-top: -10px;
+	background: #fff;
+}
+
+.log-box .log .input .other .otherway {
+	/* background: #333333; */
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	width: 192px;
+	height: 30px;
+	margin-top: 5px;
+}
+
+.log-box .log .input .other .otherway div {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.log-box .log .input .other .otherway div i {
+	margin: 0 auto;
+	width: 20px;
+	height: 30px;
+	display: block;
+	overflow: hidden;
+}
+
+input::-webkit-input-placeholder {
+	color: #9B9B9B;
+	font-size: 14px;
+}
+
+
+.log-botbox {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 80px;
+	/* background: yellow; */
+	color: #757575;
+}
+
+.log-botbox .up {
+	text-align: center;
+	font-size: 14px;
+}
+
+.log-botbox .up span {
+	padding: 0 4px;
+}
+
+.log-botbox .dow {
+	margin-top: 12px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.log-box .log .input .big-ewm {
+	width: 270px;
+	height: 270px;
+	margin: 0 auto;
+	background: url(../img/canvas.png);
+}
+
+.log-box .log .sao {
+	margin-top: 30px;
+	font-size: 24px;
+	color: #ff6700;
+	font-weight: normal;
+	padding-bottom: 10px
+}
+
+.log-box .log .input .other .other-app {
+	margin: 0 auto;
+	height: 20px;
+	width: 300px;
+	border-top: 1px solid #B0B0B0;
+	text-align: center;
+	font-size: 14px;
+	color: #B0B0B0;
+}
+
+.log-box .log .input .other .other-app span {
+	width: 84px;
+	margin: 0 auto;
+	display: block;
+	margin-top: -10px;
+	background: #fff;
+}
+
+.log-box .log .input .other .otherway {
+	width: 187px;
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.log-box .log .input .other .otherway .app-box {
+	height: 40px;
+	width: 50px;
+}
+
+.log-box .log .input .other .otherway .app-box .app {
+	width: 32px;
+	height: 32px;
+}
+
+.log-box .log .input .other .otherway .app-box span {
+	font-size: 12px;
+	color: #888;
+	text-align: center;
+	display: inline-block;
+	width: 48px;
+}
+
+.log-box .log .question {
+	font-size: 14px;
+	color: #333333;
+	padding: 0 0 20px;
+}
+
+.log-box .log .question i {
+	display: inline-block;
+	color: #BDBDBD;
+	background: #F0F0F0;
+	font-size: 16px;
+	margin-left: 5px;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	font-weight: 100;
+}
+#tishi{
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+#tishi .kuang{
+	width: 311px;
+	height: 197px;
+	background: #fff;
+	border: 1px solid #838383;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 33%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	box-sizing: border-box;
+}
+#tishi .kuang #colse{
+	position: absolute;
+	top: 3px;
+	right: 6px;
+	color: #B2B2B2;
+}
+#tishi .kuang p{
+	font-size: 12px;
+}
+#tishi .kuang .often{
+	font-weight: bold;
+}
+#tishi .kuang .p1{
+	font-weight: bold;
+	margin-top: 15px;
+}
+#tishi .kuang .p2{
+	margin-top: 3px;
+	color: #333333;
+}

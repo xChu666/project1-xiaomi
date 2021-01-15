@@ -1,0 +1,13 @@
+.body{
+	width: 640px;
+	height: 486px;
+	/* background: #00FFFF; */
+	overflow: auto;
+}
+.body p{
+	margin: 16px;
+	font-weight: bold;
+}
+.body .body_title{
+	text-align: center;
+}

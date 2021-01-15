@@ -1,0 +1,17 @@
+.bodyTop{
+	height: 126px;
+	width: 610px;
+	padding: 15px;
+}
+.bodyTop p{
+	width: 610px;
+	display: inline-block;
+	text-align: center;
+	margin: 15px 0;
+	font-size: 20px;
+	color: #333;
+	font-weight: bold;
+}
+.bodyImg img{
+	width: 640px;
+}

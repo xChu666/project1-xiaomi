@@ -1,0 +1,89 @@
+.main{
+	width: 100%;
+	height: 777px;
+	padding-bottom: 100px;
+	background: #FAFAFA;
+	margin: 0;
+}
+.main .container{
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.main .container .myNav{
+	height: 77px;
+	width: 100%;
+	padding: 30px 0;
+	font-size: 13px;
+	box-sizing: border-box;
+}
+.main .container .myNav .myxxx{
+	color: #999;
+}
+.main .container .myNav .myxxx:hover{
+	color: #845F3F;
+}
+.main .container .bBox{
+	width: 1080px;
+	height: 700px;
+	display: flex;
+	justify-content: space-between;
+	/* background: #fff; */
+}
+.main .container .bBox .lftBox{
+	width: 173px;
+	height: 700px;
+	background: #fff;
+}
+.main .container .bBox .lftBox .userName{
+	width: 153px;
+	height: 81px;
+	text-align: center;
+	padding: 36px 10px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.main .container .bBox .lftBox .userName .myAvatar{
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	background: url(../../img/myAvatar.jpg) no-repeat center center;
+	background-size: cover;
+	margin: 0 auto 8px;
+}
+.main .container .bBox .lftBox .userName p{
+	text-align: center;
+	font-size: 14px;
+	color: #4A4A4A;
+}
+.main .container .bBox .lftBox ul{
+	width: 173px;
+	height: 204px;
+	padding: 16px 0;
+}
+.main .container .bBox .lftBox ul a{
+	color: #333;
+}
+.main .container .bBox .lftBox ul a:hover{
+	color: #845F3F;
+}
+.main .container .bBox .lftBox ul a li{
+	width: 133px;
+	height: 19px;
+	padding: 16px 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 19px;
+}
+.main .container .bBox .lftBox ul a li i{
+	font-size: 3px;
+	line-height: 19px;
+	color: #845F3F;
+	opacity: 0;
+}
+.main .container .bBox .rgtBox{
+	width: 900px;
+	min-height: 700px;
+	background: #fff;
+	padding: 11px 0 11px 60px;
+	box-sizing: border-box;
+}

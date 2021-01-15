@@ -1,0 +1,433 @@
+/* *{
+	outline: solid #f00 1px !important;
+	background: #000 !important;
+	color: #fff !important;
+} */
+.main {
+	border-top: 1px solid #E7E7E7;
+	width: 100%;
+	padding-bottom: 100px;
+	margin: 0;
+}
+
+.main .container {
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.main .container .settNav {
+	height: 77px;
+	width: 100%;
+	padding: 30px 0;
+	font-size: 13px;
+	box-sizing: border-box;
+}
+
+.main .container .settNav .mySet {
+	color: #999;
+}
+
+.main .container .address {
+	min-height: 309px;
+	width: 1080px;
+	/* background: red; */
+	display: flex;
+	/* overflow: hidden; */
+	flex-wrap: wrap;
+}
+
+.main .container .address .setTitle {
+	font-size: 19px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.main .container .address .addressList {
+	width: 1080px;
+	height: 212px;
+	/* background: red; */
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+}
+.main .container .address .addressList .nweOne {
+	width: 250px;
+	height: 200px;
+	border: 1px solid #845F3F;
+	margin-right: 9px;
+	margin-bottom: 10px;
+	/* overflow: hidden; */
+	position: relative;
+}
+.main .container .address .addressList .nweOne:hover {
+	border: 1px solid #845F3F;
+}
+.main .container .address .addressList .nweOne:hover span{
+	display: block;
+}
+.main .container .address .addressList .nweOne .newInfo{
+	width: 220px;
+	height: 115px;
+	padding-left: 30px;
+	margin-top: 16px;
+}
+.main .container .address .addressList .nweOne .newInfo div{
+	font-size: 13px;
+	color: #999;
+}
+.main .container .address .addressList .nweOne .newInfo .newsName{
+	font-size: 16px;
+	color: #333;
+}
+.main .container .address .addressList .nweOne .newInfo .phoneNum{
+	color: #333;
+	margin-top: 15px;
+}
+.main .container .address .addressList .nweOne span{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	font-size: 14px;
+	color: #845F3F;
+	display: none;
+}
+
+
+.main .container .address .addressList .addressOne {
+	width: 250px;
+	height: 200px;
+	border: 1px solid #E7E7E7;
+	margin-right: 9px;
+	margin-bottom: 10px;
+	/* overflow: hidden; */
+}
+
+.main .container .address .addressList .addressOne .addTo {
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	font-size: 14px;
+	color: #ccc;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.main .container .address .addressList .addressOne:hover {
+	border: 1px solid #845F3F;
+}
+
+.main .container .address .addressList .addressOne:hover .addTo {
+	color: #845F3F;
+}
+
+.main .container .address .moreAddress {
+	width: 1080px;
+	height: 42px;
+	margin: 15px 0 8px;
+	background: #FAFAFA;
+	font-size: 14px;
+	color: #999;
+	line-height: 42px;
+	text-align: center;
+}
+
+.main .container .address .moreAddress:hover {
+	color: #845F3F;
+}
+
+.main .container .address .settlementGoods {
+	width: 1080px;
+	min-height: 600px;
+	/* overflow: hidden; */
+}
+
+.main .container .address .settlementGoods .goodTitle {
+	height: 30px;
+	width: 1080px;
+	margin: 55px 0 17px;
+	display: flex;
+}
+
+.main .container .address .settlementGoods .goodTitle span {
+	font-size: 14px;
+	color: #333;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	margin-left: 20px;
+}
+
+.main .container .address .settlementGoods .goodTitle img {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.main .container .address .settlementGoods .specificGoods {
+	width: 1038px;
+	min-height: 496px;
+	padding: 0 20px;
+	border: 1px solid #E7E7E7;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue {
+	width: 100%;
+	height: auto;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .goodsInfo {
+	width: 1030px;
+	height: 89px;
+	margin: 0 auto;
+	border-bottom: 1px solid #E7E7E7;
+	display: flex;
+	font-size: 14px;
+	color: #333;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .goodsInfo div {
+	height: 90px;
+	line-height: 90px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .goodsInfo .goodsImage {
+	width: 50px;
+	height: 90px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .goodsInfo .goodsImage img {
+	width: 50px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .goodsInfo .goodsName {
+	width: 400px;
+	margin-left: 20px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .goodsInfo .purchaseQuantity {
+	width: 340px;
+	text-align: right;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .goodsInfo .goodsTotal {
+	width: 200px;
+	text-align: right;
+	color: #C00000;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox {
+	width: 1030px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox div .invoiceTitle {
+	font-size: 19px;
+	color: #333;
+	height: 50px;
+	width: 76px;
+	line-height: 50px;
+	text-align: center;
+	margin-right: 50px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceType {
+	display: flex;
+	margin-top: 36px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceType .invoiceButton {
+	color: #845F3F;
+	border: 1px solid #845F3F;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .Invoice {
+	display: flex;
+	margin-top: 36px;
+	font-size: 14px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceTwoBox {
+	width: 762px;
+	display: block;
+	margin-left: 126px;
+	position: relative;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceTwoBox p {
+	color: #D54843;
+	font-size: 14px;
+	position: absolute;
+	right: 5px;
+	top: 33px;
+	opacity: 0;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceTwoBox div {
+	width: 762px;
+	display: none;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceTwoBox div input {
+	width: 743px;
+	height: 40px;
+	padding: 1px 2px 1px 15px;
+	margin-top: 20px;
+	outline: none;
+	border: 1px solid #E7E7E7;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceTwoBox div input::placeholder {
+	font-size: 14px;
+	color: #CCCCCC;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .invoiceTwoBox div .inputBorder {
+	border: 1px solid #845F3F;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox div .invoiceButton {
+	height: 48px;
+	width: 245px;
+	border: 1px solid #E7E7E7;
+	line-height: 48px;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox a {
+	font-size: 14px;
+	color: #67a3d9;
+	text-decoration: underline;
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	margin: 36px 0 0 125px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .message {
+	margin-top: 36px;
+	display: flex;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .message textarea {
+	width: 760px;
+	height: 97px;
+	border: 1px solid #E7E7E7;
+	outline: none;
+	padding: 12px 2px 2px 15px;
+	box-sizing: border-box;
+	resize: none;
+	margin-bottom: 50px;
+}
+
+.main .container .address .settlementGoods .specificGoods .passByValue .invoiceBox .message textarea::placeholder {
+	font-size: 14px;
+	color: #CCCCCC;
+}
+
+.main .container .address .settlementGoods .invoicePrice {
+	width: 1080px;
+	height: 156px;
+	border-bottom: 1px solid #E7E7E7;
+	/* background: #00FFFF; */
+	/* overflow: hidden; */
+}
+
+.main .container .address .settlementGoods .invoicePrice p {
+	font-size: 14px;
+	color: #C00000;
+	margin-top: 13px;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox {
+	height: 125px;
+	width: 1080px;
+	/* background: red; */
+	display: flex;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .coupon {
+	height: 125px;
+	width: 800px;
+	/* background: #003AB5; */
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount {
+	height: 125px;
+	width: 280px;
+	/* background: #ff0; */
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_1 {
+	display: flex;
+	width: 280px;
+	font-size: 14px;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_1 span {
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_1 .cou_1 {
+	width: 150px;
+	display: block;
+	color: #333;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_1 .prc_1 {
+	width: 90px;
+	margin-left: 40px;
+	display: block;
+	margin-right: 5px;
+	color: #C00000;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_2 {
+	width: 280px;
+	font-size: 18px;
+	display: flex;
+	margin-top: 20px;
+	color: ;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_2 span {
+	text-align: right;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_2 .cou_2 {
+	width: 150px;
+	display: block;
+	color: #333;
+}
+
+.main .container .address .settlementGoods .invoicePrice .couponBox .discount .box_2 .prc_2 {
+	width: 90px;
+	display: block;
+	margin-left: 40px;
+	margin-right: 5px;
+	color: #C00000;
+}
+
+.main .container .address .settlementGoods #goBuy {
+	height: 49px;
+	width: 164px;
+	background: #845F3F;
+	font-size: 19px;
+	color: #fff;
+	border-radius: 3px;
+	line-height: 49px;
+	text-align: center;
+	float: right;
+	margin-top: 44px;
+}
+
+.main .container .address .settlementGoods #goBuy:hover {
+	background: #CEBBA2;
+	transition: background .3s linear;
+}

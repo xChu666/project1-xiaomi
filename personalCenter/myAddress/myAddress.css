@@ -1,0 +1,43 @@
+.bBox .rgtBox .rgtBody {
+	width: 840px;
+	height: 505px;
+	/* background: red; */
+}
+
+.bBox .rgtBox .rgtBody p {
+	height: 24px;
+	width: 810px;
+	margin-right: 30px;
+	padding: 25px 0 10px;
+	color: #845f3f;
+	font-size: 18px;
+	font-weight: 400;
+	border-bottom: 1px solid #e7e7e7;
+}
+.bBox .rgtBox .rgtBody .addressList{
+	width: 1080px;
+	height: 212px;
+	margin-top: 14px;
+	margin-right: 9px;
+}
+.bBox .rgtBox .rgtBody .addressList .addressOne{
+	width: 250px;
+	height: 200px;
+	border: 1px solid #E7E7E7;
+	/* overflow: hidden; */
+}
+.bBox .rgtBox .rgtBody .addressList .addressOne .addTo{
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	font-size: 14px;
+	color: #ccc;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.bBox .rgtBox .rgtBody .addressList .addressOne:hover{
+	border: 1px solid #845F3F;
+}
+.bBox .rgtBox .rgtBody .addressList .addressOne:hover .addTo{
+	color: #845F3F;
+}

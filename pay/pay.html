@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>支付-小米有品</title>
+		<script src="../public-js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../public-js/public.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../public-css/public.css" />
+		<link rel="stylesheet" type="text/css" href="./pay.css"/>
+		<script src="../public-js/alldate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./pay.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 弹框 -->
+		<div class="logk" id="tankuang">
+			<div id="tan-son">
+				<span id="close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
+				<div class="deng">
+					<div class="shengming">声明与政策</div>
+					<p>欢迎您来到小米有品！</p>
+					<p>我们依据最新法律法规要求，制定并更新了<span>《隐私政策》</span>、<span>《小米有品用户协议》</span>以及<span>《小米账号使用协议》</span>。</p>
+					<p>您需阅读并同意相关政策条款方可进行登录。</p>
+					<div class="bots">
+						<div class="bot-lft"  id="bot-lft">同意并继续</div>
+						<div class="bot-rgt" id="bot-rgt">不同意</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航 -->
+		<div class="top">
+			<div class="top-container">
+				<div class="xiahuadie">
+					资质证照&nbsp; /&nbsp; 协议规则<i class="fa fa-chevron-down" aria-hidden="true"></i>
+					<div class="xiahua">
+						<div id="license">资质证照</div>
+						<div id="protocol">协议规则</div>
+					</div>
+				</div>
+				<span>|</span>
+				<div id="downAPP"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>下载APP</div>
+				<span>|</span>
+				<div>帮助中心</div>
+				<span>|</span>
+				<div class="mycontent" id="mycontent">
+					<div id="reg">注册</div>
+					<div id="log">登录</div>
+				</div>
+				<div class="logged" id="logged">
+					<div class="logAvatar"></div>
+					<div class="logName">青岛吴彦祖</div>
+					<div style="margin-left: -3px;"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+					<ul class="xiala">
+						<li id="indexOrder">我的订单</li>
+						<li id="indexRefund">退款/售后</li>
+						<li id="indexAssets">我的资产</li>
+						<li id="indexCollection">我的收藏</li>
+						<li id="indexAddress">地址管理</li>
+						<li id="dropOut">退出登录</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 菜单 -->
+		<div class="menu" id="menu-nav">
+			<div class="menu-container">
+				<div class="logo" id="logo"></div>
+				<div class="fenlei" id="fenlei">
+					<span class="fen">分类<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+				<div class="aside" id="aside">
+					<ul>
+						<!-- 有品推荐/家用电器 -->
+						<li style="margin-top: 15px;">
+							<span class="list">有品推荐</span>
+							<span>/</span>
+							<span class="list">家用电器</span>
+							<!-- 打开的隐藏部分 -->
+							<div class="smlist">
+								<!-- 有品推荐 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">有品推荐</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 为你推荐 -->
+									<div class="goods">
+										<div class="biggoods">为你推荐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>手机</span>
+											<span>智能手表</span>
+											<span>耳机</span>
+											<span>电视机</span>
+											<span>饮水机</span>
+											<span>灯具</span>
+										</div>
+									</div>
+									<!-- 精选专区 -->
+									<div class="goods">
+										<div class="biggoods">精选专区&nbsp; ></div>
+										<div class="smallgoods">
+											<span>回购榜单</span>
+											<span>生活电器</span>
+											<span>厨卫家装</span>
+											<span>全球健康</span>
+											<span>出行必备</span>
+											<span>运动健身</span>
+										</div>
+									</div>
+								</div>
+								<!-- 家用电器 -->
+								<div class="elec">
+									<div class="title">家用电器</div>
+									<!-- 频道精选 -->
+									<div class="goods">
+										<div class="biggoods">频道精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热卖爆款</span>
+											<span>温暖秋冬</span>
+											<span>厨电新品</span>
+											<span>新品上市</span>
+											<span>米粉最爱</span>
+											<span>全新定义</span>
+										</div>
+									</div>
+									<!-- 电视 -->
+									<div class="goods">
+										<div class="biggoods">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视&nbsp; ></div>
+										<div class="smallgoods">
+											<span>小米电视5</span>
+											<span>Redmi电视</span>
+											<span>全面屏</span>
+											<span>32-40英寸</span>
+											<span>43英寸</span>
+											<span>50英寸</span>
+											<span>55-60英寸</span>
+											<span>65英寸以及上</span>
+											<span>激光电视</span>
+										</div>
+									</div>
+									<!-- 冰箱 -->
+									<div class="goods">
+										<div class="biggoods">冰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱&nbsp; ></div>
+										<div class="smallgoods">
+											<span>两门冰箱</span>
+											<span>三门冰箱</span>
+											<span>对开门冰箱</span>
+											<span>十字四门冰箱</span>
+											<span>多门冰箱</span>
+											<span>小冰箱</span>
+											<span>冷柜/酒柜</span>
+											<span>米家冰箱</span>
+										</div>
+									</div>
+									<!-- 洗衣机 -->
+									<div class="goods">
+										<div class="biggoods">洗衣机&nbsp;></div>
+										<div class="smallgoods">
+											<span>两门冰箱</span>
+											<span>三门冰箱</span>
+											<span>对开门冰箱</span>
+											<span>十字四门冰箱</span>
+											<span>多门冰箱</span>
+											<span>小冰箱</span>
+											<span>冷柜/酒柜</span>
+											<span>米家冰箱</span>
+										</div>
+									</div>
+									<!-- 空调 -->
+									<div class="goods">
+										<div class="biggoods">空&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调&nbsp;></div>
+										<div class="smallgoods">
+											<span>壁挂空调</span>
+											<span>柜式空调</span>
+											<span>一级能效</span>
+											<span>三级能效</span>
+										</div>
+									</div>
+									<!-- 生活电器 -->
+									<div class="goods">
+										<div class="biggoods">生活电器&nbsp; ></div>
+										<div class="smallgoods">
+											<span>扫地机器人</span>
+											<span>吸尘器</span>
+											<span>电风扇</span>
+											<span>空气净化器</span>
+											<span>加湿器</span>
+											<span>取暖器</span>
+											<span>蒸汽清洁机</span>
+											<span>电动清洁机</span>
+											<span>除螨仪</span>
+											<span>擦窗机器人</span>
+											<span>擦地机器人</span>
+											<span>挂烫机/熨斗</span>
+											<span>烘干/消毒机</span>
+											<span>配件耗材</span>
+										</div>
+									</div>
+									<!-- 厨房小电 -->
+									<div class="goods">
+										<div class="biggoods">厨房小电&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热销单品</span>
+											<span>本周新品</span>
+											<span>即热饮水机</span>
+											<span>破壁机</span>
+											<span>电水壶</span>
+											<span>原汁机</span>
+											<span>多功能锅</span>
+											<span>电烤箱</span>
+											<span>空气炸锅</span>
+											<span>微波炉</span>
+											<span>电饭煲/压力锅</span>
+											<span>茶饮</span>
+											<span>电磁炉</span>
+											<span>咖啡机</span>
+											<span>养生壶</span>
+											<span>创意厨电</span>
+											<span>多士炉</span>
+											<span>三明治机</span>
+										</div>
+									</div>
+									<!-- 厨卫大电 -->
+									<div class="goods">
+										<div class="biggoods">厨卫大电&nbsp; ></div>
+										<div class="smallgoods">
+											<span>烟灶套装</span>
+											<span>烟灶三件套</span>
+											<span>洗碗机</span>
+											<span>嵌入式厨电</span>
+											<span>消毒柜</span>
+											<span>集成灶</span>
+											<span>油烟机</span>
+											<span>燃气灶</span>
+											<span>净水器</span>
+											<span>电热水器</span>
+											<span>燃气热水器</span>
+										</div>
+									</div>
+									<!-- 品牌推荐 -->
+									<div class="goods">
+										<div class="biggoods">品牌推荐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>云米</span>
+											<span>石头</span>
+											<span>睿米</span>
+											<span>德尔玛</span>
+											<span>顺造</span>
+											<span>智米</span>
+											<span>臻米</span>
+											<span>老板</span>
+											<span>艾美特</span>
+											<span>圈厨</span>
+											<span>品罗</span>
+											<span>贝昂</span>
+											<span>利仁</span>
+											<span>博的</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 居家餐厨/电视影音 -->
+						<li>
+							<span class="list">居家餐厨</span>
+							<span>/</span>
+							<span class="list">电视影音</span>
+							<div class="smlist">
+								<!-- 居家餐厨 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">居家餐厨</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 爆款热卖 -->
+									<div class="goods">
+										<div class="biggoods">爆款热卖&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家家纺</span>
+											<span>餐厨爆款</span>
+											<span>家饰好物</span>
+										</div>
+									</div>
+									<!-- 家纺 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+								</div>
+								<!-- 电视影音 -->
+								<div class="elec">
+									<div class="title">电视影音</div>
+									<!-- 热门精选 -->
+									<div class="goods">
+										<div class="biggoods">热门精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>人气新品</span>
+											<span>热销爆品</span>
+											<span>电视热销</span>
+											<span>声音小镇</span>
+											<span>米家投影</span>
+											<span>大牌精选</span>
+										</div>
+									</div>
+									<!-- 电视 -->
+									<div class="goods">
+										<div class="biggoods">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视&nbsp; ></div>
+										<div class="smallgoods">
+											<span>Redmi电视</span>
+											<span>全面屏</span>
+											<span>32-40英寸</span>
+											<span>43英寸</span>
+											<span>50英寸</span>
+											<span>55-60英寸</span>
+											<span>65英寸及以上</span>
+											<span>电视盒子</span>
+											<span>安装服务</span>
+										</div>
+									</div>
+									<!-- 投影 -->
+									<div class="goods">
+										<div class="biggoods">投&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影&nbsp; ></div>
+										<div class="smallgoods">
+											<span>投影仪</span>
+											<span>激光电视</span>
+											<span>投影配件</span>
+										</div>
+									</div>
+									<!-- 耳机 -->
+									<div class="goods">
+										<div class="biggoods">耳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机&nbsp; ></div>
+										<div class="smallgoods">
+											<span>真无线耳机</span>
+											<span>蓝牙耳机</span>
+											<span>降噪耳机</span>
+											<span>运动耳机</span>
+											<span>游戏耳机</span>
+											<span>有线耳机</span>
+										</div>
+									</div>
+									<!-- 音箱音响 -->
+									<div class="goods">
+										<div class="biggoods">音箱音响&nbsp; ></div>
+										<div class="smallgoods">
+											<span>小爱音箱</span>
+											<span>家庭音响</span>
+											<span>回音壁</span>
+											<span>便携音箱</span>
+											<span>唱片影碟</span>
+										</div>
+									</div>
+									<!-- 影音娱乐 -->
+									<div class="goods">
+										<div class="biggoods">影音娱乐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>阅读器</span>
+											<span>麦克风</span>
+											<span>影音配件</span>
+										</div>
+									</div>
+									<!-- HIFI专区 -->
+									<div class="goods">
+										<div class="biggoods">影音娱乐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>播放器</span>
+											<span>高保真耳机</span>
+										</div>
+									</div>
+									<!-- 大牌精选 -->
+									<div class="goods">
+										<div class="biggoods">大牌精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>SONY</span>
+											<span>Bose</span>
+											<span>Apple</span>
+											<span>山进</span>
+											<span>舒尔</span>
+											<span>森海塞尔</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 家具家装/智能家庭 -->
+						<li>
+							<span class="list">家具家装</span>
+							<span>/</span>
+							<span class="list">智能家庭</span>
+							<div class="smlist">
+								<!-- 家具家装 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">家具家装</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 爆款推荐 -->
+									<div class="goods">
+										<div class="biggoods">爆款推荐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>爆款家具</span>
+											<span>推荐卫浴</span>
+											<span>TOP榜单</span>
+										</div>
+									</div>
+									<!-- 厨房卫浴 -->
+									<div class="goods">
+										<div class="biggoods">厨房卫浴&nbsp; ></div>
+										<div class="smallgoods">
+											<span>爆品主推</span>
+											<span>淋浴花洒</span>
+											<span>浴霸吊顶</span>
+											<span>马桶</span>
+											<span>智能马桶</span>
+											<span>智能马桶盖</span>
+											<span>水槽</span>
+											<span>厨卫龙头</span>
+											<span>厨卫收纳</span>
+											<span>厨卫配件</span>
+											<span>饮水工具</span>
+											<span>浴室柜</span>
+											<span>淋浴房</span>
+											<span>地漏角阀</span>
+											<span>浴缸</span>
+										</div>
+									</div>
+									<!-- 家装建材 -->
+									<div class="goods">
+										<div class="biggoods">家装建材&nbsp; ></div>
+										<div class="smallgoods">
+											<span>晾晒专区</span>
+											<span>窗帘电机</span>
+											<span>门窗地板吊顶</span>
+											<span>全屋定制</span>
+											<span>开关插座</span>
+											<span>安装服务</span>
+										</div>
+									</div>
+									<!-- 家具 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>103板木系列</span>
+											<span>金韵胡桃系列</span>
+											<span>Sunny系列</span>
+											<span>卧室家具</span>
+											<span>客厅家具</span>
+											<span>餐厅家具</span>
+											<span>书房家具</span>
+											<span>阳台家具</span>
+											<span>小件家具</span>
+											<span>设计师家具</span>
+										</div>
+									</div>
+									<!-- 照明品牌 -->
+									<div class="goods">
+										<div class="biggoods">照明品牌&nbsp; ></div>
+										<div class="smallgoods">
+											<span>飞利浦系列</span>
+											<span>Yeelight系列</span>
+											<span>欧普系列</span>
+											<span>华艺系列</span>
+											<span>慧作系列</span>
+											<span>美的系列</span>
+										</div>
+									</div>
+									<!-- 灯 -->
+									<div class="goods">
+										<div class="biggoods">灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>吸顶灯</span>
+											<span>吊灯</span>
+											<span>台灯</span>
+											<span>筒射灯</span>
+											<span>灯泡</span>
+											<span>灯带</span>
+											<span>落地灯</span>
+											<span>床头灯</span>
+											<span>橱柜灯</span>
+											<span>化妆灯</span>
+											<span>杀菌灯</span>
+											<span>挂屏灯</span>
+											<span>景观庭院灯</span>
+											<span>夜灯</span>
+											<span>面板灯</span>
+											<span>镜前灯</span>
+											<span>灯管&配件</span>
+										</div>
+									</div>
+									<!-- 床垫 -->
+									<div class="goods">
+										<div class="biggoods">床&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;垫&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>乳胶床垫</span>
+											<span>黄麻床垫</span>
+											<span>弹簧床垫</span>
+											<span>小于8cm薄</span>
+											<span>12-17cm偏薄</span>
+											<span>18-23cm标准</span>
+											<span>大于25cm厚</span>
+											<span>儿童床垫</span>
+										</div>
+									</div>
+								</div>
+								<!-- 智能家庭 -->
+								<div class="elec">
+									<div class="title">智能家庭</div>
+									<!-- 专属定制 -->
+									<div class="goods">
+										<div class="biggoods">专属定制&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热卖爆款</span>
+											<span>人气新品</span>
+											<span>MIoT专区</span>
+											<span>小爱同学</span>
+											<span>新品手环5</span>
+										</div>
+									</div>
+									<!-- 智能门锁 -->
+									<div class="goods">
+										<div class="biggoods">智能门锁&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热销爆款</span>
+											<span>执手款</span>
+											<span>推拉款</span>
+											<span>其他锁类</span>
+										</div>
+									</div>
+									<!-- 智能安防 -->
+									<div class="goods">
+										<div class="biggoods">智能安防&nbsp; ></div>
+										<div class="smallgoods">
+											<span>智能门铃</span>
+											<span>智能猫眼</span>
+											<span>保险箱</span>
+											<span>摄像机</span>
+											<span>报警器</span>
+										</div>
+									</div>
+									<!-- 智能家居 -->
+									<div class="goods">
+										<div class="biggoods">智能家居&nbsp; ></div>
+										<div class="smallgoods">
+											<span>智能门铃</span>
+											<span>家庭套装</span>
+											<span>窗帘电机</span>
+											<span>开关</span>
+											<span>空调伴侣</span>
+											<span>插座</span>
+											<span>网关</span>
+											<span>传感器</span>
+											<span>远程遥控</span>
+										</div>
+									</div>
+									<!-- 路由器 -->
+									<div class="goods">
+										<div class="biggoods">路由器&nbsp; ></div>
+										<div class="smallgoods">
+											<span>路由器</span>
+											<span>Redmi路由器</span>
+										</div>
+									</div>
+									<!-- 智能穿戴 -->
+									<div class="goods">
+										<div class="biggoods">智能穿戴&nbsp; ></div>
+										<div class="smallgoods">
+											<span>智能手环</span>
+											<span>时尚智能手表</span>
+											<span>运动智能手表</span>
+											<span>防丢设备</span>
+										</div>
+									</div>
+									<!-- 智能酷玩 -->
+									<div class="goods">
+										<div class="biggoods">智能酷玩&nbsp; ></div>
+										<div class="smallgoods">
+											<span>AR/VR</span>
+											<span>智能教育</span>
+											<span>照片打印机</span>
+											<span>智酷玩具</span>
+											<span>智能乐器</span>
+											<span>无人机</span>
+											<span>游戏周边</span>
+										</div>
+									</div>
+									<!-- 相机 -->
+									<div class="goods">
+										<div class="biggoods">相&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机&nbsp; ></div>
+										<div class="smallgoods">
+											<span>拍立得</span>
+											<span>运动相机</span>
+											<span>数码相机</span>
+											<span>单反相机</span>
+											<span>微单相机</span>
+										</div>
+									</div>
+									<!-- 热门品牌 -->
+									<div class="goods">
+										<div class="biggoods">热门品牌&nbsp; ></div>
+										<div class="smallgoods">
+											<span>Aqara</span>
+											<span>小嘀</span>
+											<span>Amazfit</span>
+											<span>创米小白</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 手机电脑/数码周边 -->
+						<li>
+							<span class="list">手机电脑</span>
+							<span>/</span>
+							<span class="list">数码周边</span>
+							<div class="smlist">
+								<!-- 居家餐厨 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">居家餐厨</div>
+									<!-- 每行的小商品分类 -->
+									<div class="goods">
+										<div class="biggoods">为你推荐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>手机</span>
+											<span>智能手表</span>
+											<span>耳机</span>
+											<span>电视机</span>
+											<span>饮水机</span>
+											<span>灯具</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">精选专区&nbsp; ></div>
+										<div class="smallgoods">
+											<span>回购榜单</span>
+											<span>生活电器</span>
+											<span>厨卫家装</span>
+											<span>全球健康</span>
+											<span>出行必备</span>
+											<span>运动健身</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">厨房卫浴&nbsp; ></div>
+										<div class="smallgoods">
+											<span>爆品主推</span>
+											<span>淋浴花洒</span>
+											<span>浴霸吊顶</span>
+											<span>马桶</span>
+											<span>智能马桶</span>
+											<span>智能马桶盖</span>
+											<span>水槽</span>
+											<span>厨卫龙头</span>
+											<span>厨卫收纳</span>
+											<span>厨卫配件</span>
+											<span>饮水工具</span>
+											<span>浴室柜</span>
+											<span>淋浴房</span>
+											<span>地漏角阀</span>
+											<span>浴缸</span>
+										</div>
+									</div>
+									<!-- 家装建材 -->
+									<div class="goods">
+										<div class="biggoods">家装建材&nbsp; ></div>
+										<div class="smallgoods">
+											<span>晾晒专区</span>
+											<span>窗帘电机</span>
+											<span>门窗地板吊顶</span>
+											<span>全屋定制</span>
+											<span>开关插座</span>
+											<span>安装服务</span>
+										</div>
+									</div>
+									<!-- 家具 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>103板木系列</span>
+											<span>金韵胡桃系列</span>
+											<span>Sunny系列</span>
+											<span>卧室家具</span>
+											<span>客厅家具</span>
+											<span>餐厅家具</span>
+											<span>书房家具</span>
+											<span>阳台家具</span>
+											<span>小件家具</span>
+											<span>设计师家具</span>
+										</div>
+									</div>
+									<!-- 照明品牌 -->
+									<div class="goods">
+										<div class="biggoods">照明品牌&nbsp; ></div>
+										<div class="smallgoods">
+											<span>飞利浦系列</span>
+											<span>Yeelight系列</span>
+											<span>欧普系列</span>
+											<span>华艺系列</span>
+											<span>慧作系列</span>
+											<span>美的系列</span>
+										</div>
+									</div>
+									<!-- 灯 -->
+									<div class="goods">
+										<div class="biggoods">灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>吸顶灯</span>
+											<span>吊灯</span>
+											<span>台灯</span>
+											<span>筒射灯</span>
+											<span>灯泡</span>
+											<span>灯带</span>
+											<span>落地灯</span>
+											<span>床头灯</span>
+											<span>橱柜灯</span>
+											<span>化妆灯</span>
+											<span>杀菌灯</span>
+											<span>挂屏灯</span>
+											<span>景观庭院灯</span>
+											<span>夜灯</span>
+											<span>面板灯</span>
+											<span>镜前灯</span>
+											<span>灯管&配件</span>
+										</div>
+									</div>
+									<!-- 床垫 -->
+									<div class="goods">
+										<div class="biggoods">床&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;垫&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>乳胶床垫</span>
+											<span>黄麻床垫</span>
+											<span>弹簧床垫</span>
+											<span>小于8cm薄</span>
+											<span>12-17cm偏薄</span>
+											<span>18-23cm标准</span>
+											<span>大于25cm厚</span>
+											<span>儿童床垫</span>
+										</div>
+									</div>
+								</div>
+								<!-- 电视影音 -->
+								<div class="elec">
+									<div class="title">电视影音</div>
+									<div class="goods">
+										<div class="biggoods">频道精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热卖爆款</span>
+											<span>温暖秋冬</span>
+											<span>厨电新品</span>
+											<span>新品上市</span>
+											<span>米粉最爱</span>
+											<span>全新定义</span>
+										</div>
+									</div>
+									<!-- 家纺 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 日用文创/服装配饰 -->
+						<li>
+							<span class="list">日用文创</span>
+							<span>/</span>
+							<span class="list">服装配饰</span>
+							<div class="smlist">
+								<!-- 日用文创 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">日用文创</div>
+									<!-- 每行的小商品分类 -->
+									<div class="goods">
+										<div class="biggoods">精品推荐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>手机</span>
+											<span>智能手表</span>
+											<span>耳机</span>
+											<span>电视机</span>
+											<span>饮水机</span>
+											<span>灯具</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">日常精品&nbsp; ></div>
+										<div class="smallgoods">
+											<span>回购榜单</span>
+											<span>生活电器</span>
+											<span>厨卫家装</span>
+											<span>全球健康</span>
+											<span>出行必备</span>
+											<span>运动健身</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+								</div>
+								<!-- 服装配饰 -->
+								<div class="elec">
+									<div class="title">服装配饰</div>
+									<div class="goods">
+										<div class="biggoods">频道精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热卖爆款</span>
+											<span>温暖秋冬</span>
+											<span>厨电新品</span>
+											<span>新品上市</span>
+											<span>米粉最爱</span>
+											<span>全新定义</span>
+										</div>
+									</div>
+									<!-- 家具 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>103板木系列</span>
+											<span>金韵胡桃系列</span>
+											<span>Sunny系列</span>
+											<span>卧室家具</span>
+											<span>客厅家具</span>
+											<span>餐厅家具</span>
+											<span>书房家具</span>
+											<span>阳台家具</span>
+											<span>小件家具</span>
+											<span>设计师家具</span>
+										</div>
+									</div>
+									<!-- 照明品牌 -->
+									<div class="goods">
+										<div class="biggoods">照明品牌&nbsp; ></div>
+										<div class="smallgoods">
+											<span>飞利浦系列</span>
+											<span>Yeelight系列</span>
+											<span>欧普系列</span>
+											<span>华艺系列</span>
+											<span>慧作系列</span>
+											<span>美的系列</span>
+										</div>
+									</div>
+									<!-- 灯 -->
+									<div class="goods">
+										<div class="biggoods">灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>吸顶灯</span>
+											<span>吊灯</span>
+											<span>台灯</span>
+											<span>筒射灯</span>
+											<span>灯泡</span>
+											<span>灯带</span>
+											<span>落地灯</span>
+											<span>床头灯</span>
+											<span>橱柜灯</span>
+											<span>化妆灯</span>
+											<span>杀菌灯</span>
+											<span>挂屏灯</span>
+											<span>景观庭院灯</span>
+											<span>夜灯</span>
+											<span>面板灯</span>
+											<span>镜前灯</span>
+											<span>灯管&配件</span>
+										</div>
+									</div>
+									<!-- 床垫 -->
+									<div class="goods">
+										<div class="biggoods">床&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;垫&nbsp; ></div>
+										<div class="smallgoods">
+											<span>全实木系列</span>
+											<span>乳胶床垫</span>
+											<span>黄麻床垫</span>
+											<span>弹簧床垫</span>
+											<span>小于8cm薄</span>
+											<span>12-17cm偏薄</span>
+											<span>18-23cm标准</span>
+											<span>大于25cm厚</span>
+											<span>儿童床垫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 鞋靴箱包/美妆个护 -->
+						<!-- 鞋靴箱包/美妆个护 -->
+						<li>
+							<span class="list">鞋靴箱包</span>
+							<span>/</span>
+							<span class="list">美妆个护</span>
+							<div class="smlist">
+								<!-- 鞋靴箱包 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">鞋靴箱包</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 家纺 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+								</div>
+								<!-- 美妆个护 -->
+								<div class="elec">
+									<div class="title">美妆个护</div>
+									<!-- 电视 -->
+									<div class="goods">
+										<div class="biggoods">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视&nbsp; ></div>
+										<div class="smallgoods">
+											<span>Redmi电视</span>
+											<span>全面屏</span>
+											<span>32-40英寸</span>
+											<span>43英寸</span>
+											<span>50英寸</span>
+											<span>55-60英寸</span>
+											<span>65英寸及以上</span>
+											<span>电视盒子</span>
+											<span>安装服务</span>
+										</div>
+									</div>
+									<!-- 投影 -->
+									<div class="goods">
+										<div class="biggoods">投&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影&nbsp; ></div>
+										<div class="smallgoods">
+											<span>投影仪</span>
+											<span>激光电视</span>
+											<span>投影配件</span>
+										</div>
+									</div>
+									<!-- 耳机 -->
+									<div class="goods">
+										<div class="biggoods">耳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机&nbsp; ></div>
+										<div class="smallgoods">
+											<span>真无线耳机</span>
+											<span>蓝牙耳机</span>
+											<span>降噪耳机</span>
+											<span>运动耳机</span>
+											<span>游戏耳机</span>
+											<span>有线耳机</span>
+										</div>
+									</div>
+									<!-- 音箱音响 -->
+									<div class="goods">
+										<div class="biggoods">音箱音响&nbsp; ></div>
+										<div class="smallgoods">
+											<span>小爱音箱</span>
+											<span>家庭音响</span>
+											<span>回音壁</span>
+											<span>便携音箱</span>
+											<span>唱片影碟</span>
+										</div>
+									</div>
+									<!-- 影音娱乐 -->
+									<div class="goods">
+										<div class="biggoods">影音娱乐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>阅读器</span>
+											<span>麦克风</span>
+											<span>影音配件</span>
+										</div>
+									</div>
+									<!-- HIFI专区 -->
+									<div class="goods">
+										<div class="biggoods">影音娱乐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>播放器</span>
+											<span>高保真耳机</span>
+										</div>
+									</div>
+									<!-- 大牌精选 -->
+									<div class="goods">
+										<div class="biggoods">大牌精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>SONY</span>
+											<span>Bose</span>
+											<span>Apple</span>
+											<span>山进</span>
+											<span>舒尔</span>
+											<span>森海塞尔</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 运动户外/出行车品 -->
+						<li>
+							<span class="list">运动户外</span>
+							<span>/</span>
+							<span class="list">出行车品</span>
+							<div class="smlist">
+								<!-- 运动户外 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">运动户外</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 电视 -->
+									<div class="goods">
+										<div class="biggoods">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视&nbsp; ></div>
+										<div class="smallgoods">
+											<span>小米电视5</span>
+											<span>Redmi电视</span>
+											<span>全面屏</span>
+											<span>32-40英寸</span>
+											<span>43英寸</span>
+											<span>50英寸</span>
+											<span>55-60英寸</span>
+											<span>65英寸以及上</span>
+											<span>激光电视</span>
+										</div>
+									</div>
+									<!-- 冰箱 -->
+									<div class="goods">
+										<div class="biggoods">冰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱&nbsp; ></div>
+										<div class="smallgoods">
+											<span>两门冰箱</span>
+											<span>三门冰箱</span>
+											<span>对开门冰箱</span>
+											<span>十字四门冰箱</span>
+											<span>多门冰箱</span>
+											<span>小冰箱</span>
+											<span>冷柜/酒柜</span>
+											<span>米家冰箱</span>
+										</div>
+									</div>
+									<!-- 洗衣机 -->
+									<div class="goods">
+										<div class="biggoods">洗衣机&nbsp;></div>
+										<div class="smallgoods">
+											<span>两门冰箱</span>
+											<span>三门冰箱</span>
+											<span>对开门冰箱</span>
+											<span>十字四门冰箱</span>
+											<span>多门冰箱</span>
+											<span>小冰箱</span>
+											<span>冷柜/酒柜</span>
+											<span>米家冰箱</span>
+										</div>
+									</div>
+									<!-- 空调 -->
+									<div class="goods">
+										<div class="biggoods">空&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调&nbsp;></div>
+										<div class="smallgoods">
+											<span>壁挂空调</span>
+											<span>柜式空调</span>
+											<span>一级能效</span>
+											<span>三级能效</span>
+										</div>
+									</div>
+								</div>
+								<!-- 出行车品 -->
+								<div class="elec">
+									<div class="title">出行车品</div>
+									<!-- 家纺 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 美食酒饮/母婴亲子 -->
+						<li>
+							<span class="list">美食酒饮</span>
+							<span>/</span>
+							<span class="list">母婴亲子</span>
+							<div class="smlist">
+								<!-- 美食酒饮 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">美食酒饮</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 家纺 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+								</div>
+								<!-- 母婴亲子 -->
+								<div class="elec">
+									<div class="title">母婴亲子</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">频道精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热卖爆款</span>
+											<span>温暖秋冬</span>
+											<span>厨电新品</span>
+											<span>新品上市</span>
+											<span>米粉最爱</span>
+											<span>全新定义</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 健康保健/宠物生活 -->
+						<li>
+							<span class="list">健康保健</span>
+							<span>/</span>
+							<span class="list">宠物生活</span>
+							<div class="smlist">
+								<!-- 健康保健 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">健康保健</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 家纺 -->
+									
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">为你推荐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>手机</span>
+											<span>智能手表</span>
+											<span>耳机</span>
+											<span>电视机</span>
+											<span>饮水机</span>
+											<span>灯具</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">精选专区&nbsp; ></div>
+										<div class="smallgoods">
+											<span>回购榜单</span>
+											<span>生活电器</span>
+											<span>厨卫家装</span>
+											<span>全球健康</span>
+											<span>出行必备</span>
+											<span>运动健身</span>
+										</div>
+									</div>
+								</div>
+								<!-- 宠物生活 -->
+								<div class="elec">
+									<div class="title">宠物生活</div>
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">频道精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热卖爆款</span>
+											<span>温暖秋冬</span>
+											<span>厨电新品</span>
+											<span>新品上市</span>
+											<span>米粉最爱</span>
+											<span>全新定义</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 有品海购/DLAB -->
+						<li>
+							<span class="list">有品海购</span>
+							<span>/</span>
+							<span class="list">DLAB</span>
+							<div class="smlist">
+								<!-- 有品海购 -->
+								<div class="reco">
+									<!-- 分类大标题 -->
+									<div class="title">有品海购</div>
+									<!-- 每行的小商品分类 -->
+									<!-- 家纺 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">为你推荐&nbsp; ></div>
+										<div class="smallgoods">
+											<span>手机</span>
+											<span>智能手表</span>
+											<span>耳机</span>
+											<span>电视机</span>
+											<span>饮水机</span>
+											<span>灯具</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">精选专区&nbsp; ></div>
+										<div class="smallgoods">
+											<span>回购榜单</span>
+											<span>生活电器</span>
+											<span>厨卫家装</span>
+											<span>全球健康</span>
+											<span>出行必备</span>
+											<span>运动健身</span>
+										</div>
+									</div>
+								</div>
+								<!-- DLAB -->
+								<div class="elec">
+									<div class="title">DLAB</div>
+									<!-- 家纺 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纺&nbsp; ></div>
+										<div class="smallgoods">
+											<span>被子</span>
+											<span>床品件套</span>
+											<span>枕头</span>
+											<span>毛巾浴巾</span>
+											<span>地垫</span>
+											<span>地毯</span>
+											<span>居家布艺</span>
+											<span>窗帘</span>
+											<span>床单/床笠/床褥</span>
+											<span>居家办公小物</span>
+										</div>
+									</div>
+									<!-- 家饰 -->
+									<div class="goods">
+										<div class="biggoods">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;饰&nbsp; ></div>
+										<div class="smallgoods">
+											<span>居家收纳</span>
+											<span>家饰摆件</span>
+											<span>鲜花绿植</span>
+											<span>装饰画</span>
+											<span>永生花</span>
+											<span>挂钟/闹钟</span>
+											<span>香薰</span>
+										</div>
+									</div>
+									<!-- 锅 -->
+									<div class="goods">
+										<div class="biggoods">锅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></div>
+										<div class="smallgoods">
+											<span>炒锅</span>
+											<span>平底锅</span>
+											<span>汤锅</span>
+											<span>砂锅</span>
+											<span>奶锅</span>
+											<span>火锅</span>
+											<span>锅具套装</span>
+										</div>
+									</div>
+									<!-- 水杯 -->
+									<div class="goods">
+										<div class="biggoods">水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杯&nbsp; ></div>
+										<div class="smallgoods">
+											<span>搅拌杯</span>
+											<span>保温壶</span>
+											<span>保温杯</span>
+											<span>马克杯</span>
+											<span>玻璃杯</span>
+											<span>杯具套装</span>
+											<span>运动杯壶</span>
+											<span>焖烧杯</span>
+										</div>
+									</div>
+									<!-- 厨房配件 -->
+									<div class="goods">
+										<div class="biggoods">厨房配件&nbsp; ></div>
+										<div class="smallgoods">
+											<span>保鲜收纳</span>
+											<span>厨房置物架</span>
+											<span>调料器皿</span>
+											<span>铲勺</span>
+											<span>功能厨具</span>
+										</div>
+									</div>
+									<!-- 刀剪砧板 -->
+									<div class="goods">
+										<div class="biggoods">刀剪砧板&nbsp; ></div>
+										<div class="smallgoods">
+											<span>刀具</span>
+											<span>砧板</span>
+											<span>剪刀</span>
+										</div>
+									</div>
+									<!-- 餐具 -->
+									<div class="goods">
+										<div class="biggoods">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>餐具套装</span>
+											<span>刀叉勺筷</span>
+										</div>
+									</div>
+									<!-- 茶咖酒具 -->
+									<div class="goods">
+										<div class="biggoods">茶咖酒具&nbsp; ></div>
+										<div class="smallgoods">
+											<span>开瓶器</span>
+											<span>酒杯酒具</span>
+											<span>咖啡器具</span>
+											<span>茶壶</span>
+											<span>茶杯</span>
+											<span>茶具配件</span>
+										</div>
+									</div>
+									<div class="goods">
+										<div class="biggoods">频道精选&nbsp; ></div>
+										<div class="smallgoods">
+											<span>热卖爆款</span>
+											<span>温暖秋冬</span>
+											<span>厨电新品</span>
+											<span>新品上市</span>
+											<span>米粉最爱</span>
+											<span>全新定义</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<div class="nav">
+					<div>限时抢购</div>
+					<div>企业采购</div>
+				</div>
+				<div class="search" id="search">
+					<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+					<input type="text" name="" id="sousuo" placeholder="搜一搜" />
+				</div>
+				<i class="fa fa-cart-plus fa-lg" aria-hidden="true" id="cart"></i>
+			</div>
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<div class="container">
+				<div class="payNav">
+					<span>首页</span>
+					>
+					<span>个人中心</span>
+					>
+					<span class="mypay">确认订单</span>
+				</div>
+				<div class="payInfo" id="payInfo">
+					
+				</div>
+				<!-- 返回顶部 -->
+				<div class="gotop">
+					<div style="height: 50px;">
+						<i class="fa fa-headphones fa-2x" aria-hidden="true" style="margin-left: 5px;"></i>
+						<p>联系客服</p>
+						<div class="contact">
+							<span style="font-size: 13px;color: #333;">小米有品平台问题，建议反馈，商户和物流问题投诉等请拨打小米有品</span>
+							<span style="font-size: 13px;color: #333;">客服热线</span>
+							<span style="font-size: 20px;font-weight: bold;padding-top: 15px;">400-100-1199</span>
+							<span style="font-size: 10px;color: #999;">（周一至周日8：00-18：00）</span>
+							<span style="font-size: 13px;color: #333;padding-top: 15px;">小米/米家自营品牌，手机电视智能硬件商品或订单发货退款售后问题请拨打</span>
+							<span style="font-size: 13px;color: #333;">小米自营客服热线</span>
+							<span style="font-size: 20px;font-weight: bold;padding-top: 15px;">400-100-5678</span>
+							<span style="font-size: 10px;color: #999;">（周一至周日8：00-18：00）</span>
+						</div>
+					</div>
+					<div style="height: 64px;">
+						<i class="fa fa-qrcode fa-2x" aria-hidden="true" style="margin-left: 8px;"></i>
+						<p>下载</p>
+						<p>APP</p>
+						<div class="download">
+							<div></div>
+							<span style="margin-top: 20px;">下载小米有品APP</span>
+							<span>得新人礼包</span>
+						</div>
+					</div>
+					<div style="height: 50px;">
+						<i class="fa fa-gift fa-2x" aria-hidden="true" style="margin-left: 6px;"></i>
+						<p>新人有礼</p>
+						<div class="gift">
+							<div class="g1"></div>
+							<div class="g2"></div>
+						</div>
+					</div>
+					<div style="height: 50px;">
+						<i class="fa fa-weixin fa-2x" aria-hidden="true"></i>
+						<p>关注微信</p>
+						<div class="wechat">
+							<div></div>
+							<span style="margin-top: 20px;">扫码关注[小米有品]微信服务号，签到积分赢大奖</span>
+						</div>
+					</div>
+					<!-- <a href="#top"> -->
+						<div id="goTop" style="height: 49px; border-bottom:none;">
+							<i class="fa fa-hand-o-up fa-2x" aria-hidden="true"></i>
+							<p>回到顶部</p>
+						</div>
+					<!-- </a> -->
+				</div>
+			</div>
+		</div>
+		<div class="main2">
+			<div class="container">
+				<div class="paymentMethod">
+					<div class="selectPay">选择以下支付方式付款</div>
+					<p>支付平台</p>
+					<div class="paySuccess">
+						<div style="background: url(../img/zhifubao.png);" id="WeChatPay"></div>
+						<div style="background: url(../img/weixin.png);" id="payByAliPay"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部所有 -->
+		<div class="bottom">
+			<div class="bottom-container">
+				<div class="lft"></div>
+				<div class="ctr">
+					<ul>
+						<li>
+							<div></div>苏公网安备 32010502010244号&nbsp;&nbsp;©xiaomiyoupin.com&nbsp;&nbsp;苏B2-20180351&nbsp;苏ICP备18025642号-1
+						</li>
+						<li>企业名称：有品信息科技有限公司&nbsp;关于我们&nbsp;&nbsp;入驻有品&nbsp;&nbsp;知识产权侵权投诉</li>
+						<li>小米有品平台运营主体变更公告</li>
+						<li>南京市建邺区白龙江东街8号3栋9层</li>
+					</ul>
+				</div>
+				<div class="rgt"></div>
+			</div>
+		</div>
+	</body>
+</html>

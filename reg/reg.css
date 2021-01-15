@@ -1,0 +1,293 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	background: #F9F9F9;
+}
+
+.reg-box {
+	width: 100%;
+	height: 529px;
+	position: relative;
+	top: 15%;
+}
+
+.reg-box .reg {
+	width: 854px;
+	height: 544px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top: 54%;
+	transform: translate(-50%, -50%);
+}
+
+.reg-box .reg .icon {
+	margin: 0 auto;
+	border-radius: 2px;
+	width: 48px;
+	height: 48px;
+	background: url(../img/xiaomi-logo.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.reg-box .reg p {
+	margin-top: 43px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.reg-box .reg .input {
+	height: 255px;
+	width: 331px;
+	margin: 0 auto;
+	margin-top: 30px;
+	/* background: #003AB5; */
+	/* overflow: hidden; */
+	position: relative;
+}
+.reg-box .reg div .approved{
+	top: 50%;
+	left: 50%;
+	transform: translate(64%, -160%);
+	width: 140px;
+	height: 70px;
+	border: 2px solid #01ec4c;
+	text-align: center;
+	line-height: 70px;
+	color: #01ec4c;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	display: none;
+}
+
+.reg-box .reg .input .area {
+	width: 331px;
+	height: 85px;
+	/* background: #f00; */
+	margin-bottom: 20px;
+}
+
+.reg-box .reg .input .area:hover {
+	cursor: pointer;
+}
+
+.reg-box .reg .input .area .place {
+	width: 329px;
+	height: 42px;
+	border: 1px solid #E8E8E8;
+}
+
+.reg-box .reg .input .area .place span {
+	color: #555;
+	font-size: 14px;
+	display: inline-block;
+	line-height: 42px;
+	margin-left: 14px;
+}
+
+.reg-box .reg .input .area .place i {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	border-left: 1px solid #E8E8E8;
+	float: right;
+	line-height: 42px;
+	text-align: center;
+}
+
+.reg-box .reg .input .phone {
+	width: 331px;
+	height: 85px;
+	/* background: #f00; */
+	margin-bottom: 20px;
+}
+
+.reg-box .reg .input .phone #error{
+	height: 26px;
+	text-align: left;
+	width: 331px;
+	line-height: 26px;
+	color: #FF6F3D;
+	opacity: 0;
+}
+.reg-box .reg .input .phone #error i{
+	margin-right: 5px;
+}
+
+.reg-box .reg .input div p {
+	color: #333333;
+	font-size: 14px;
+	text-align: left;
+	margin-top: 0;
+	padding: 5px 0;
+}
+
+.reg-box .reg .input .phone .phone-num {
+	width: 329px;
+	height: 42px;
+	border: 1px solid #E8E8E8;
+}
+
+.reg-box .reg .input .phone .phone-num span {
+	display: inline-block;
+	width: 69px;
+	height: 42px;
+	border-right: 1px solid #E8E8E8;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	color: #555;
+}
+
+.reg-box .reg .input .phone .phone-num span i {
+	padding: 0 5px;
+	color: #9D9D9D;
+}
+
+.reg-box .reg .input .phone .phone-num input {
+	outline: none;
+	border: 0;
+}
+
+.reg-box .reg .input button {
+	height: 42px;
+	width: 329px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	outline: none;
+	border: 0;
+	color: #fff;
+	background: #FF6700;
+	margin-top: 5px;
+}
+.reg-box .reg .input button:hover{
+	background: #FF936A;
+}
+.reg-box .reg .angry{
+	font-size: 14px;
+	color: #9D9D9D;
+	margin-top: 80px;
+}
+.reg-box .reg .angry span{
+	color: #000;
+	font-weight: bold;
+}
+.reg-box .reg .receiveCode{
+	width: 332px;
+	height: 255px;
+	margin: 0 auto;
+	/* background: #0f0; */
+	margin-top: 40px;
+	display: none;
+}
+.reg-box .reg .receiveCode .reg_title{
+	width: 332px;
+	height: 40px;
+	padding-bottom: 20px;
+}
+.reg-box .reg .receiveCode .reg_title div{
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+}
+.reg-box .reg .receiveCode .reg_title div span{
+	color: #ff6700;
+}
+.reg-box .reg .receiveCode .reg_title p{
+	color: #666;
+	font-size: 14px;
+	margin: 0;
+	text-align: left;
+}
+.reg-box .reg .receiveCode .reg_yzm{
+	width: 330px;
+	height: 40px;
+	border: 1px solid #DDDDDD;
+	display: flex;
+	color: #9D9D9D;
+}
+.reg-box .reg .receiveCode .reg_yzm input{
+	width: 170px;
+	height: 20px;
+	padding: 10px;
+	outline: none;
+	border: 0;
+}
+.reg-box .reg .receiveCode .reg_yzm div{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+	font-size: 14px;
+	background: #fff;
+}
+.reg-box .reg .receiveCode #error2{
+	font-size: 14px;
+	height: 26px;
+	text-align: left;
+	width: 331px;
+	line-height: 26px;
+	color: #FF6F3D;
+	margin-top: 5px;
+	opacity: 0;
+}
+.reg-box .reg .receiveCode #error2 i{
+	margin-right: 5px;
+}
+.reg-box .reg .receiveCode .no-ma{
+	color: #46639c;
+	font-size: 14px;
+	margin-top: 8px;
+}
+.reg-box .reg .receiveCode button{
+	width: 332px;
+	height: 40px;
+	outline: none;
+	margin: 5px 0;
+}
+.reg-box .reg .receiveCode #nextStep{
+	background: #FF6700;
+	border: 1px solid #EA8038;
+	color: #fff;
+}
+.reg-box .reg .receiveCode #nextStep:hover{
+	background: #FF936A;
+}
+.reg-box .reg .receiveCode #backtrack{
+	background: #fff;
+	border: 1px solid #DDDDDD;
+	color: #7C7C7C;
+}
+.reg-box .reg .receiveCode #backtrack:hover{
+	color: #000;
+}
+.reg-botbox {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 80px;
+	/* background: yellow; */
+	color: #757575;
+}
+
+.reg-botbox .up {
+	text-align: center;
+	font-size: 14px;
+}
+
+.reg-botbox .up span {
+	padding: 0 4px;
+}
+
+.reg-botbox .dow {
+	margin-top: 12px;
+	text-align: center;
+	font-size: 14px;
+	color: #9d9d9d;
+}
